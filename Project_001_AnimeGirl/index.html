@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+
+    <style>
+        *{ margin:0px; padding:0px;}
+
+        #music{
+            position: absolute;
+            z-index: 99;
+            top:-120px;
+            padding-left: 3%;
+            right: 0%;
+        }
+        #logo{
+        position:absolute;
+            margin-top: 15%;
+            margin-left: 60%;
+
+   }
+        #cl{
+	position: absolute;
+	margin-top: 4%;
+	left: -3px;
+	top: -42px;
+        }
+        #cl1{
+            position:absolute;
+            margin-left: 10%;
+            margin-top: -20%;
+        }
+        #jing{
+            position: absolute;
+            margin-top: 3%;
+        }
+        button{
+            background: #ffffff;
+            position: absolute;
+            top:120px;
+            border: 0;
+            height: 30px;
+        }
+        video{
+            padding-left: 40px;
+            padding-bottom: 4px;
+        }
+        ul{
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        li{
+            position: relative;
+            width:100%;
+            height: 100%;
+
+        }
+
+
+    </style>
+    </head>
+
+
+<body style="overflow-x:hidden;overflow-y:hidden">
+<div id="Main">
+        <ul id="scene"
+            data-calibrate-x="false"
+            data-calibrate-y="false"
+            data-invert-x="false"
+            data-invert-y="false"
+            data-limit-x="false"
+            data-limit-y="false"
+            data-scalar-x="10"
+            data-scalar-y="15"
+            data-friction-x="0.2"
+            data-friction-y="0.2"
+            data-origin-x="-1"
+            data-origin-y="-1">
+         
+         
+            <li class="layer" data-depth="0.45"><img id = "background" src="images/4.png" height="140%"></li>
+            <li class="layer" data-depth="0.7"><img id = "background" src="images/3.png" height="130%"></li>
+            <li class="layer" data-depth="0.89"><img id = "cloud" src="images/2.png" height="120%"></li>
+            <li class="layer" data-depth="1.13"><img id = "light"src="images/1.png" height="120%"></li>
+            <li class="layer" data-depth="1.1"><img id = "light"src="images/flare+.png" height="120%"></li>
+
+        </ul>
+
+
+</div>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/jquery.parallax.js"></script>       
+<script>
+    $(document).ready(function(){
+        $("#music").fadeTo("fast",0.0);
+        $("button").click(function(){
+        });
+        $("#music").hover(function () {
+                $("#music").fadeTo("fast",1);
+        }, function () {
+                $("#music").fadeTo("fast",0.0);
+
+        });
+        $('#scene').parallax();
+    });
+</script>
+
+
+
+</body>
+</html>
