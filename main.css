@@ -1,0 +1,23 @@
+body {
+  background-color: #181818;
+  font-family: fantasy, sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 400%;
+  color: #aaaaaa;
+}
+
+a {
+  text-align: center;
+  font-size: 300%;
+  color: #888888;
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  text-align: center;
+  font-size: 350%;
+  color: #dddddd;
+}
