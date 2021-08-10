@@ -120,7 +120,7 @@ font-size:30px;
 
 }
 
-@media screen and (min-width:800px) and (max-width:1300px) {
+@media screen and (min-width:1250px) and (max-width:1300px) {
 
 #header_text{
 color:#fff;
@@ -162,7 +162,7 @@ font-size:30px;
 
 }
 
-@media screen and (max-width:799px) {
+@media screen and (max-width:1249px) {
 
 #header_text{
 color:#fff;
