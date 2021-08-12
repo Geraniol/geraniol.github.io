@@ -179,14 +179,14 @@ a:focus {
 .content {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: calc(100vh - 13rem);
+  width: 100%;
   position: relative;
-  justify-content: flex-start;
+  top: 35vh;
+  margin: auto;
   align-items: center; }
 
 .content__title {
-  font-size: 13vw;
+  font-size: 18vh;
   color: var(--color-bgtitle);
   text-transform: uppercase;
   margin: 0;
@@ -196,14 +196,12 @@ a:focus {
 
 .content__subtitle {
   color: var(--color-bgsubtitle);
-  font-size: 7vw;
+  font-size: 12vh;
   font-family: 'Sacramento', cursive;
   font-weight: 400;
   margin: 0;
   line-height: 1; }
 
-@media screen and (min-width: 53em) {
-  .content {
-    height: 100vh;
-    justify-content: center; } }
-
+.content {
+  height: 100%;
+  justify-content: center; }
