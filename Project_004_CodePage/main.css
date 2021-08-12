@@ -53,7 +53,7 @@ font-family:sans-serif;
 font-weight:light;
 font-size:15pt;
 line-height:150%;
-overflow:auto;
+overflow:scroll;
 }
 
 #footer{
