@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<head>
+    <title>试试就逝世</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body class="dark day">
+    <div class="switch bg day dark" onclick="dark_mode()" title="Click me!">
+        <div class="switch body day dark"></div>
+    </div>
+    <div class="switch bg cccp_normal cccp" onclick="cccp()" title="Click me!">
+        <div class="switch body cccp_normal cccp">☭</div>
+    </div>
+    <div class="switch bg boy male" onclick="male()" title="Click me!">
+        <div class="switch body boy male">♂</div>
+    </div>
+    <div class="switch bg face calm" onclick="smile()" title="Click me!">
+        <div class="switch body face calm">☺</div>
+    </div>
+    <audio id="cccp" src="audio/cccp.mp3" preload="auto"></audio>
+    <audio id="disappear" src="audio/disappear.mp3" preload="auto"></audio>
+    <audio id="dog" src="audio/dog.mp3" preload="auto"></audio>
+    <audio id="dream" src="audio/dream.mp3" preload="auto"></audio>
+    <audio id="jgby" src="audio/jgby.mp3" preload="auto"></audio>
+    <audio id="lbw" src="audio/lbw.mp3" preload="auto"></audio>
+    <audio id="lover" src="audio/lover.mp3" preload="auto"></audio>
+    <audio id="skbl" src="audio/skbl.mp3" preload="auto"></audio>
+    <audio id="smile" src="audio/smile.mp3" preload="auto"></audio>
+    <audio id="ymd" src="audio/ymd.mp3" preload="auto"></audio>
+    <div class="switch bg love done" onclick="love()" title="Click me!">
+        <div class="switch body love done">❤</div>
+    </div>
+    <div class="switch bg click before" onclick="clicking()" title="激活傲娇小JS！">
+        <div class="switch body click before">🔥</div>
+    </div>
+</body>
+<script>
+    Array.prototype.forEach.call(document.getElementsByClassName("switch"), function(obj) {
+        obj.style.transition = "0.3s";
+    });
+    function dark_mode() {
+        if (document.getElementsByClassName("dark day")[0]) {
+            while (document.getElementsByClassName("dark day")[0]) {
+                document.getElementsByClassName("dark day")[0].className = document.getElementsByClassName("dark day")[0].className.replace("day","night");
+            }
+            Array.prototype.forEach.call(document.getElementsByClassName("switch bg"), function(obj) {
+                obj.style.backgroundColor = "#888";
+            });
+            document.body.style.backgroundColor = "#222";
+        }
+        else {
+            while (document.getElementsByClassName("dark night")[0]) {
+                document.getElementsByClassName("dark night")[0].className = document.getElementsByClassName("dark night")[0].className.replace("night","day");
+            }
+            Array.prototype.forEach.call(document.getElementsByClassName("switch bg"), function(obj) {
+                obj.style.backgroundColor = "#ddd";
+            });
+            document.body.style.backgroundColor = "#fff";
+        }
+    }
+    function cccp() {
+        if (document.getElementsByClassName("cccp cccp_normal")[0]) {
+            while (document.getElementsByClassName("cccp cccp_normal")[0]) {
+                document.getElementsByClassName("cccp cccp_normal")[0].className = document.getElementsByClassName("cccp cccp_normal")[0].className.replace("cccp_normal","cccp_active");
+            }
+            document.getElementById("skbl").pause();
+            document.getElementById("cccp").play();
+            document.body.style.backgroundColor = "#ee1c25";
+        }
+        else {
+            while (document.getElementsByClassName("cccp cccp_active")[0]) {
+                document.getElementsByClassName("cccp cccp_active")[0].className = document.getElementsByClassName("cccp cccp_active")[0].className.replace("cccp_active","cccp_normal");
+            }
+            document.getElementById("cccp").pause();
+            document.getElementById("skbl").currentTime = 0;
+            document.getElementById("skbl").play();
+        }
+    }
+    function male() {
+        if (document.getElementsByClassName("male boy")[0]) {
+            while (document.getElementsByClassName("male boy")[0]) {
+                document.getElementsByClassName("male boy")[0].className = document.getElementsByClassName("male boy")[0].className.replace("boy","gay");
+            }
+            document.getElementById("jgby").pause();
+            document.getElementById("lover").currentTime = 0;
+            document.getElementById("lover").play();
+            document.body.style.backgroundColor = "rgb(150, 0, 200)";
+        }
+        else {
+            while (document.getElementsByClassName("male gay")[0]) {
+                document.getElementsByClassName("male gay")[0].className = document.getElementsByClassName("male gay")[0].className.replace("gay","boy");
+            }
+            document.getElementById("lover").pause();
+            document.getElementById("jgby").currentTime = 0;
+            document.getElementById("jgby").play();
+        }
+    }
+    function smile() {
+        if (document.getElementsByClassName("face calm")[0]) {
+            while (document.getElementsByClassName("face calm")[0]) {
+                document.getElementsByClassName("face calm")[0].className = document.getElementsByClassName("face calm")[0].className.replace("calm","smile");
+            }
+            document.getElementById("lbw").pause();
+            document.getElementById("smile").currentTime = 0;
+            document.getElementById("smile").play();
+            document.body.style.backgroundColor = "rgb(255, 225, 0)";
+        }
+        else {
+            while (document.getElementsByClassName("face smile")[0]) {
+                document.getElementsByClassName("face smile")[0].className = document.getElementsByClassName("face smile")[0].className.replace("smile","calm");
+            }
+            document.getElementById("smile").pause();
+            document.getElementById("lbw").currentTime = 0;
+            document.getElementById("lbw").play();
+        }
+    }
+    function love() {
+        if (document.getElementsByClassName("done love")[0]) {
+            while (document.getElementsByClassName("done love")[0]) {
+                document.getElementsByClassName("done love")[0].className = document.getElementsByClassName("done love")[0].className.replace("done","doing");
+            }
+            document.getElementById("dog").pause();
+            document.getElementById("ymd").currentTime = 0;
+            document.getElementById("ymd").play();
+            document.body.style.backgroundColor = "rgb(255, 80, 125)";
+        }
+        else {
+            while (document.getElementsByClassName("doing love")[0]) {
+                document.getElementsByClassName("doing love")[0].className = document.getElementsByClassName("doing love")[0].className.replace("doing","done");
+            }
+            document.getElementById("ymd").pause();
+            document.getElementById("dog").currentTime = 0;
+            document.getElementById("dog").play();
+        }
+    }
+    function clicking() {
+        if (document.getElementsByClassName("click before")[0]) {
+            while (document.getElementsByClassName("click before")[0]) {
+                document.getElementsByClassName("click before")[0].className = document.getElementsByClassName("click before")[0].className.replace("before","after");
+            }
+            document.body.style.backgroundColor = "#fff"
+            window.alert("你谁啊？！点点点你点个屁啊你？！");
+            if (window.confirm("臭小鬼！还不快给我认错？！")) {
+                window.alert("算了！这次就原谅你了！");
+            }
+            else {
+                if (window.confirm("什么？居然还不认错？明明就是你做错了！")) {
+                    window.alert("看在你知错能改的份上今天就先放过你！");
+                }
+                else {
+                    while (!(window.confirm("我今天就非要你认错不可！"))) {}
+                    window.alert("你可算认错了！要是再来的话你没好果子吃！");
+                    document.getElementById("disappear").currentTime = 0;
+                    document.getElementById("disappear").play();
+                }
+            }
+        }
+        else {
+            document.getElementById("dream").currentTime = 0;
+            document.getElementById("dream").play();
+            window.alert("想把我关掉？做梦去吧你！呸！");
+        }
+    }
+</script>
