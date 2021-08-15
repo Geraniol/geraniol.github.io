@@ -148,12 +148,13 @@ dark.addListener(ifDark);
 function openpage(obj) {
 window.location.href = obj.dataset.origin
 }
+Array.prototype.forEach.call(document.getElementsByTagName("img"), function (img) {
+img.style.transition = "0.4s"});
 function day_or_night(obj) {
 document.body.style.transition = "0.4s";
 document.getElementById("images_title").style.transition = "0.4s";
 document.getElementById("header_text").style.transition = "0.4s";
 document.getElementById("switch").style.transition = "0.4s";
-document.getElementsByTagName("img")[3].style.transition = "0.4s";
 if (document.getElementsByName("mode")[0].dataset.mode == "day") {
   document.getElementById("day").dataset.mode = "night";
   document.getElementById("day").id = "night";
