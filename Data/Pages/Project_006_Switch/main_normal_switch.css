@@ -1,0 +1,48 @@
+* {
+    -webkit-user-select: none;
+    user-select:none;
+}
+
+.switch.bg {
+    display:inline-block;
+    position: relative;
+    margin: auto;
+    width: 42pt;
+    height: 24pt;
+    border-radius: 12pt;
+    box-shadow: 0 0 2pt rgba(0, 0, 0, 0.3) inset;
+}
+
+.switch.bg.day {
+    background-color: #aaa;
+}
+
+.switch.bg.night {
+    background-color: rgb(100, 255, 120);
+}
+
+.switch.body {
+    display: inline-block;
+    position: absolute;
+    top: 2pt;
+    left: 2pt;
+    margin: 0pt;
+    padding: 0pt;
+    width: 20pt;
+    height: 20pt;
+    border-radius: 10pt;
+    box-shadow: 0 0 2pt rgba(0, 0, 0, 0.3);
+    font-family: "Times New Roman";
+    font-size: 18pt;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switch.body.day {
+    background-color: #fff;
+}
+
+.switch.body.night {
+    background-color: #fff;
+    transform: translateX(18pt);
+}
