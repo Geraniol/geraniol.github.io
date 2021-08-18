@@ -4,6 +4,8 @@
 }
 
 body {
+    user-select: none;
+    -webkit-user-select: none;
     background-color: #181818;
     font-family: fantasy, qiantu, sans-serif;
 }
