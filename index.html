@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+
 <head>
   <title>K.I.Squad-HomePage</title>
   <meta charset="utf-8">
@@ -7,12 +9,34 @@
 
 <body>
 
-<p>List of Projects:</p><br />
-<a href="Data/Pages/Project_006_Switch/index.html" style="text-decoration:none"><div>Switch</div></a><br />
-<a href="Data/Pages/Project_004_CodePage/index.html" style="text-decoration:none"><div>Sample Code Page</div></a><br />
-<a href="Data/Pages/Project_005_FlowPage/index.html" style="text-decoration:none;color:#fb6"><div>Sample Flow Page</div></a><br />
-<a href="Data/Pages/Project_001_AnimeGirl/index.html" style="text-decoration:none"><div>Anime Girl</div></a>
-<a href="Data/Pages/Project_002_Star/index.html" style="text-decoration:none"><div>Star</div></a>
-<a href="Data/Pages/Project_003_Chocolate/index.html" style="text-decoration:none"><div>Chocolate</div></a>
+  <h1>List of Projects:</h1>
+  <p><a href="Data/Pages/Project_006_Switch/index.html">
+      Switch｜社死按钮
+    </a></p>
+  <p><a href="Data/Pages/Project_004_CodePage/index.html">
+      Sample Code｜代码页面
+    </a></p>
+  <p><a href="Data/Pages/Project_005_FlowPage/index.html" class="orange">
+      Flow Page｜瀑布流
+    </a></p>
+  <p><a href="Data/Pages/Project_001_AnimeGirl/index.html">
+      Anime Girl｜动态动漫壁纸
+    </a></p>
+  <p><a href="Data/Pages/Project_002_Star/index.html">
+      Star｜白色星球壁纸
+    </a></p>
+  <p><a href="Data/Pages/Project_003_Chocolate/index.html">
+      Chocolate｜巧克力
+    </a></p>
+  <div class="image">
+    <img src="Data/images/coffee/coffee_wmp.png"></img>
+  <img src="Data/images/coffee/coffee_alipay.png"></img>
+  </div>
 </body>
+<script>
+  Array.prototype.forEach.call(document.getElementsByTagName("a"), function (obj) {
+    obj.style.transition = "0.3s"
+  })
+</script>
+
 </html>
