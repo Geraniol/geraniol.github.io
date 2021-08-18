@@ -6,6 +6,7 @@
 body {
     user-select: none;
     -webkit-user-select: none;
+    overflow: hidden;
     background-color: #181818;
     font-family: fantasy, qiantu, sans-serif;
 }
