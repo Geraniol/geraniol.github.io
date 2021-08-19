@@ -28,11 +28,12 @@
   <p><a href="Data/Pages/Project_003_Chocolate/index.html">
       Chocolate｜巧克力
     </a></p>
-  <h2>Buy me a coffee, please!｜求赞助呜呜呜</h2>
+  <h2 onclick="javascript:document.getElementById('secret').innerHTML='将index.html改为index_ex.html试试'">Buy me a coffee, please!｜求赞助呜呜呜</h2>
   <img src="Data/images/coffee/coffee_wmp.png" id="wmp"
     onclick="javascript:this.style.backgroundColor='#fff'"></img>
   <img src="Data/images/coffee/coffee_alipay.png" id="alipay"
     onclick="javascript:this.style.backgroundColor='#fff'"></img>
+  <h3 id="secret"></h3>
 </body>
 <script>
   Array.prototype.forEach.call(document.getElementsByTagName("a"), function (obj) {

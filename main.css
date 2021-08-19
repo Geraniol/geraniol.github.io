@@ -15,7 +15,7 @@ h1 {
     margin-top: 60pt;
     text-align: center;
     font-size: 50pt;
-    color: #aaaaaa;
+    color: #aaa;
 }
 
 h2 {
@@ -24,7 +24,22 @@ h2 {
     margin-bottom: 10pt;
     text-align: center;
     font-size: 12pt;
-    color: #555555;
+    color: #444;
+    transition: all 0.5s;
+}
+
+h2:hover {
+    font-size: 13pt;
+    color: #888
+}
+
+h3 {
+    margin: 0pt;
+    margin-top: 135pt;
+    margin-bottom: 10pt;
+    text-align: center;
+    font-size: 10pt;
+    color: #333;
     transition: all 0.5s;
 }
 
@@ -32,17 +47,17 @@ p {
     text-align: center;
     font-size: 30pt;
     margin: 7pt;
-    color: #aaaaaa;
+    color: #aaa;
 }
 
 a {
-    color: #888888;
+    color: #888;
     text-decoration: none;
 }
 
 a:hover {
     font-size: 105%;
-    color: #dddddd;
+    color: #ddd;
 }
 
 .orange {
