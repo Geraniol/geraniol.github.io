@@ -25,12 +25,20 @@ h2 {
     text-align: center;
     font-size: 12pt;
     color: #444;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 h2:hover {
     font-size: 13pt;
-    color: #888
+    color: #888;
+    animation: shake 0.2s;
+    -webkit-animation: shake 0.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+h2:active {
+    color: #ddd;
 }
 
 h3 {
@@ -39,7 +47,7 @@ h3 {
     margin-bottom: 10pt;
     text-align: center;
     font-size: 10pt;
-    color: #333;
+    color: #950;
     transition: all 0.5s;
 }
 
@@ -75,7 +83,7 @@ img {
     transition: all 0.5s;
 }
 
-img:hover{
+img:hover {
     background-color: #fff;
     width: 120pt;
 }
@@ -94,4 +102,28 @@ img:hover{
     margin-top: 0pt;
     right: calc(50% - 120pt);
     transform: scaleX(-1);
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0.5deg);
+    }
+    50% {
+        transform: rotate(-0.5deg);
+    }
+    100% {
+        transform: rotate(0.5deg);
+    }
+}
+
+@-webkit-keyframes shake {
+    0% {
+        transform: rotate(0.5deg);
+    }
+    50% {
+        transform: rotate(-0.5deg);
+    }
+    100% {
+        transform: rotate(0.5deg);
+    }
 }
