@@ -16,6 +16,15 @@ h1 {
     text-align: center;
     font-size: 50pt;
     color: #aaa;
+    transition: all 0.3s;
+}
+
+h1:hover {
+    color: #ddd;
+}
+
+h1:active {
+    color: #d54;
 }
 
 h2 {
@@ -51,6 +60,14 @@ h3 {
     transition: all 0.5s;
 }
 
+h3:hover {
+    color: rgb(255, 140, 0);
+}
+
+h3:active {
+    color: #fb6;
+}
+
 p {
     text-align: center;
     font-size: 30pt;
@@ -79,12 +96,22 @@ a:hover {
 img {
     background-color: #181818;
     width: 100pt;
-    border-radius: 5pt;
+    margin: 0pt;
+    border-radius: 7pt;
     transition: all 0.5s;
 }
 
 img:hover {
     background-color: #fff;
+    width: 120pt;
+    animation: shake 0.2s;
+    -webkit-animation: shake 0.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+img:active {
+    background-color: #444444;
     width: 120pt;
 }
 
@@ -93,7 +120,6 @@ img:hover {
     margin: 0pt;
     margin-top: 0pt;
     left: calc(50% - 120pt);
-    transform: scaleX(1);
 }
 
 #alipay {
@@ -101,7 +127,6 @@ img:hover {
     margin: 0pt;
     margin-top: 0pt;
     right: calc(50% - 120pt);
-    transform: scaleX(-1);
 }
 
 @keyframes shake {
