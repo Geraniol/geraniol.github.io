@@ -18,6 +18,16 @@ h1 {
     color: #aaaaaa;
 }
 
+h2 {
+    margin: 0pt;
+    margin-top: 25pt;
+    margin-bottom: 10pt;
+    text-align: center;
+    font-size: 12pt;
+    color: #555555;
+    transition: all 0.5s;
+}
+
 p {
     text-align: center;
     font-size: 30pt;
@@ -45,20 +55,28 @@ a:hover {
 
 img {
     background-color: #181818;
-    width: 105pt;
-    margin: 15pt;
+    width: 100pt;
     border-radius: 5pt;
     transition: all 0.5s;
 }
 
-img:hover, img:active {
+img:hover{
     background-color: #fff;
+    width: 120pt;
 }
 
-.image {
-    width: 100%;
-    display: table-cell;
-    text-align: center;
-    position: fixed;
+#wmp {
+    position: absolute;
     margin: 0pt;
+    margin-top: 0pt;
+    left: calc(50% - 120pt);
+    transform: scaleX(1);
+}
+
+#alipay {
+    position: absolute;
+    margin: 0pt;
+    margin-top: 0pt;
+    right: calc(50% - 120pt);
+    transform: scaleX(-1);
 }
