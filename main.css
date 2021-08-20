@@ -12,6 +12,9 @@ body {
 }
 
 h1 {
+    width: fit-content;
+    position: relative;
+    margin: auto;
     margin-top: 60pt;
     text-align: center;
     font-size: 50pt;
@@ -21,6 +24,7 @@ h1 {
 
 h1:hover {
     color: #ddd;
+    text-shadow: 0 2pt 5pt #444;
 }
 
 h1:active {
@@ -28,7 +32,9 @@ h1:active {
 }
 
 h2 {
-    margin: 0pt;
+    width: fit-content;
+    position: relative;
+    margin: auto;
     margin-top: 25pt;
     margin-bottom: 10pt;
     text-align: center;
@@ -44,6 +50,7 @@ h2:hover {
     -webkit-animation: shake 0.2s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
+    text-shadow: 0 2pt 5pt #444;
 }
 
 h2:active {
@@ -51,8 +58,10 @@ h2:active {
 }
 
 h3 {
-    margin: 0pt;
-    margin-top: 135pt;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    margin-top: 140pt;
     margin-bottom: 10pt;
     text-align: center;
     font-size: 10pt;
@@ -62,6 +71,7 @@ h3 {
 
 h3:hover {
     color: rgb(255, 140, 0);
+    text-shadow: 0 2pt 5pt #444;
 }
 
 h3:active {
@@ -70,19 +80,19 @@ h3:active {
 
 p {
     text-align: center;
-    font-size: 30pt;
-    margin: 7pt;
-    color: #aaa;
+    margin: 0pt;
 }
 
 a {
+    font-size: 30pt;
     color: #888;
     text-decoration: none;
 }
 
 a:hover {
-    font-size: 105%;
+    font-size: 32pt;
     color: #ddd;
+    text-shadow: 0 2pt 5pt #444;
 }
 
 .orange {
@@ -97,7 +107,8 @@ img {
     background-color: #181818;
     width: 100pt;
     margin: 0pt;
-    border-radius: 7pt;
+    border: solid 3pt #181818;
+    border-radius: 8pt;
     transition: all 0.5s;
 }
 
@@ -108,11 +119,12 @@ img:hover {
     -webkit-animation: shake 0.2s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
+    box-shadow: 0 6pt 15pt #888;
 }
 
 img:active {
-    background-color: #444444;
-    width: 120pt;
+    box-shadow: 0 4pt 10pt #444;
+    width: 110pt;
 }
 
 #wmp {
