@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Umbrella&nbsp;CUHK-Shenzhen&nbsp;Student&nbsp;Union&nbsp;&nbsp;&nbsp;&nbsp;</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+</head>
+
+<body onload="newtext()">
+    <script>
+
+        var text = document.title;
+        var timerID;
+        function newtext() {
+            clearTimeout(timerID);
+            document.title = text.substring(1, text.length) + text.substring(0, 1);
+            text = document.title.substring(0, text.length);
+            timerID = setTimeout("newtext()", 200)
+        }
+
+        function colordarkgreen() {
+            document.getElementById("box").setAttribute("style", "background-image: linear-gradient(#c4efff 0%, #c8fce8 70%, #003845 70%, #003845 100%);");
+            document.getElementById("projectname").setAttribute("style", "color: #003845;");
+            document.getElementById("bar").setAttribute("style", "background-color: #003845;");
+            var div = document.getElementsByClassName("color");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "outline: none;"); }
+            document.getElementById("darkgreen").setAttribute("style", "outline: #003845 solid 3px;");
+            var div = document.getElementsByClassName("image");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "opacity: 0%;"); }
+            document.getElementById("imgdarkgreen").setAttribute("style", "opacity: 100%;");
+            var div = document.getElementsByTagName("body");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "background-image: linear-gradient(#c4efffdd 0%, #c8fce8dd 70%, #003845dd 70%, #003845dd 100%);"); }
+        }
+
+        function colorgold() {
+            document.getElementById("box").setAttribute("style", "background-image: linear-gradient(#fff6cb 0%, #fddec9 70%, #f9b327 70%, #f9b327 100%);");
+            document.getElementById("projectname").setAttribute("style", "color: #f9b327;");
+            document.getElementById("bar").setAttribute("style", "background-color: #f9b327;");
+            var div = document.getElementsByClassName("color");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "outline: none;"); }
+            document.getElementById("gold").setAttribute("style", "outline: #f9b327 solid 3px;");
+            var div = document.getElementsByClassName("image");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "opacity: 0%;"); }
+            document.getElementById("imggold").setAttribute("style", "opacity: 100%;");
+            var div = document.getElementsByTagName("body");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "background-image: linear-gradient(#fff6cbdd 0%, #fddec9dd 70%, #f9b327dd 70%, #f9b327dd 100%);"); }
+        }
+
+        function colorskyblue() {
+            document.getElementById("box").setAttribute("style", "background-image: linear-gradient(#cbfbff 0%, #c9e5fd 70%, #3aaee9 70%, #3aaee9 100%);");
+            document.getElementById("projectname").setAttribute("style", "color: #3aaee9;");
+            document.getElementById("bar").setAttribute("style", "background-color: #3aaee9;");
+            var div = document.getElementsByClassName("color");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "outline: none;"); }
+            document.getElementById("skyblue").setAttribute("style", "outline: #3aaee9 solid 3px;");
+            var div = document.getElementsByClassName("image");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "opacity: 0%;"); }
+            document.getElementById("imgskyblue").setAttribute("style", "opacity: 100%;");
+            var div = document.getElementsByTagName("body");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "background-image: linear-gradient(#cbfbff 0%, #c9e5fd 70%, #3aaee9 70%, #3aaee9 100%);"); }
+        }
+
+        function colortomato() {
+            document.getElementById("box").setAttribute("style", "background-image: linear-gradient(#ffe5cc 0%, #fdc7c7 70%, #af2822 70%, #af2822 100%);");
+            document.getElementById("projectname").setAttribute("style", "color: #af2822;");
+            document.getElementById("bar").setAttribute("style", "background-color: #af2822;");
+            var div = document.getElementsByClassName("color");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "outline: none;"); }
+            document.getElementById("tomato").setAttribute("style", "outline: #af2822 solid 3px;");
+            var div = document.getElementsByClassName("image");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "opacity: 0%;"); }
+            document.getElementById("imgtomato").setAttribute("style", "opacity: 100%;");
+            var div = document.getElementsByTagName("body");
+            for (let i = 0; i < div.length; i++) { div[i].setAttribute("style", "background-image: linear-gradient(#ffe5cc 0%, #fdc7c7 70%, #af2822 70%, #af2822 100%);"); }
+        }
+
+    </script>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        body {
+            background-color: #ffffff;
+            background-image: linear-gradient(#c4efffdd 0%, #c8fce8dd 70%, #003845dd 70%, #003845dd 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        #box {
+            width: 100vmin;
+            height: 100vh;
+            background-image: linear-gradient(#c4efff 0%, #c8fce8 70%, #003845 70%, #003845 100%);
+            box-shadow: 0 0 50px #00000088;
+        }
+
+        #projectname {
+            position: fixed;
+            transform: translateX(calc(100vmin * 0.07));
+            margin-top: calc(15vh - 10vmin);
+            font-size: 8vmin;
+            font-family: monospace, 'Courier New';
+            font-weight: 900;
+            color: #003845;
+            text-shadow: 1px 1px #ffffff44;
+            text-align: left;
+            width: 100vmin;
+            transition: 0.5s;
+        }
+
+        #colorname {
+            position: fixed;
+            transform: translateX(calc(-100vmin * 0.07));
+            margin-top: calc(100vh - 15vmin);
+            font-size: 7vmin;
+            font-family: monospace, 'Courier New';
+            font-weight: 900;
+            color: #ffffff;
+            text-align: right;
+            width: 100vmin;
+        }
+
+        #bar {
+            position: fixed;
+            margin-top: calc(16vh + 8vmin);
+            background-color: #003845;
+            margin-left: calc(100vmin * 0.07);
+            height: 0.6vmin;
+            width: calc(15vmin + 10vh);
+            border-radius: 0.3vmin;
+            transition: 0.5s;
+        }
+
+        .color {
+            position: fixed;
+            margin-top: calc(18vh + 8vmin);
+            height: 4vh;
+            width: 4vmin;
+            border-radius: 2vmin;
+            transform: scale(0.8);
+            transition: 0.2s;
+        }
+
+        #darkgreen {
+            background-color: #003845;
+            margin-left: calc(100vmin * 0.07);
+            outline: #003845 solid 3px;
+            outline-offset: 3px;
+        }
+
+        #gold {
+            background-color: #f9b327;
+            margin-left: calc(150vmin * 0.07 + 2vh);
+            outline-offset: 3px;
+        }
+
+        #skyblue {
+            background-color: #3aaee9;
+            margin-left: calc(200vmin * 0.07 + 4vh);
+            outline-offset: 3px;
+        }
+
+        #tomato {
+            background-color: #af2822;
+            margin-left: calc(250vmin * 0.07 + 6vh);
+            outline-offset: 3px;
+        }
+
+        .image {
+            position: fixed;
+            margin-left: calc(100vmin * 0.2);
+            margin-top: calc(30vh - 15vmin);
+            width: calc(68vh + 15vmin);
+            filter: drop-shadow(5px 15px 50px #00000066);
+            transition: 0.7s;
+        }
+
+        #imgdarkgreen {
+            opacity: 100%;
+        }
+
+        #imggold {
+            opacity: 0%;
+        }
+
+        #imgskyblue {
+            opacity: 0%;
+        }
+
+        #imgtomato {
+            opacity: 0%;
+        }
+    </style>
+    <div id="box">
+        <img class="image" id="imgdarkgreen" src="./images/darkgreen.png">
+        <img class="image" id="imggold" src="./images/gold.png">
+        <img class="image" id="imgskyblue" src="./images/skyblue.png">
+        <img class="image" id="imgtomato" src="./images/tomato.png">
+        <div id="projectname">CUHK-Shenzhen<br>Student&nbsp;Union</div>
+        <div id="colorname">Dark&nbsp;Green</div>
+        <div id="bar"></div>
+        <div id="colors">
+            <div class="color" id="darkgreen" onclick="colordarkgreen()"></div>
+            <div class="color" id="gold" onclick="colorgold()"></div>
+            <div class="color" id="skyblue" onclick="colorskyblue()"></div>
+            <div class="color" id="tomato" onclick="colortomato()"></div>
+        </div>
+    </div>
+</body>
+
+</html>
