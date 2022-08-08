@@ -8,12 +8,10 @@
         type="image/x-icon">
     <script>
         var text = document.title;
-        var timer;
         function new_title() {
-            clearTimeout(timer);
             document.title = text.substring(1, text.length) + text.substring(0, 1);
             text = document.title.substring(0, text.length);
-            timer = setTimeout("new_title()", 500)
+            setTimeout("new_title()", 500)
         }
         function show_alert(text) {
             alert(text);
