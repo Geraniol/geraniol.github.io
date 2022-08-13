@@ -27,6 +27,20 @@
             padding: 0;
         }
 
+        embed {
+            width: calc(100vw - 6vh);
+            margin: 3vh;
+            aspect-ratio: 8/5;
+            max-width: 94vmin;
+            box-shadow: 0 0 rgba(0, 0, 0, 0);
+            border-radius: 1vmin;
+            transition: 0.3s;
+        }
+
+        embed:hover {
+            box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+        }
+
         pre {
             padding: 3vh;
             white-space: pre-wrap;
@@ -61,12 +75,14 @@
 </head>
 
 <body onload="new_title(),time_alert()">
+
+    <embed src="./sure.pdf">
     <pre>
 <b>学生会宣传部创意设计小组考核题目</b>
 
 <b>岗位：</b>创意设计
 <b>工作内容：</b>制作活动海报、宣传物料等。
-<b>技能要求：</b>有技术、有审美，能够独立完成设计工作。有设计、排版、绘画、修图、建模经验者加分。
+<b>技能要求：</b>有技术、有审美，能够独立完成设计工作。有设计、排版、绘画、修图经验者加分。
 
 <b>考核题目：</b>以中秋节为主题设计<b>活动海报</b>或<b>宣传物料</b>（<r onclick="show_alert('两项都做也行。')">至少一项</r>）。
 
