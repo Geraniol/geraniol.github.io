@@ -189,13 +189,13 @@
         document.getElementById("main").innerHTML = shiplist;
         document.getElementById("boxes").innerHTML = "第" + boxes + "个箱子";
         document.getElementById("bp").innerHTML = "已获得" + blueprintnum + "/186张蓝图";
-        if (blueprintnum == 186) {
-            clearInterval(auto);
+        if (blueprintnum < 186) {
+            autorun();
         }
     }
 
     function autorun() {
-        auto = setInterval(function () { reload() }, 1);
+        auto = setTimeout(function () { reload() }, 0);
     }
 
 </script>
