@@ -179,14 +179,14 @@
         boxes += 1;
         var shiplist = "";
         for (var i = 0; i < ships.length; i++) {
-            for (var j = 0; j < ships[i].length; j++) {
-                if (ships[i][j + 1] == 100 && ships[i][0] == 100) {
-                    shiplist += names[i][0] + "-" + names[i][j + 1] + "<br>";
+            for (var j = 1; j < ships[i].length; j++) {
+                if (ships[i][j] == 100 && ships[i][0] == 100) {
+                    document.getElementById(String(i) + "+" + String(j)).setAttribute("style", "display:block;");
                     blueprintnum += 1;
                 }
             }
         }
-        document.getElementById("main").innerHTML = shiplist;
+        // document.getElementById("main").innerHTML = shiplist;
         document.getElementById("boxes").innerHTML = "第" + boxes + "个箱子";
         document.getElementById("bp").innerHTML = "已获得" + blueprintnum + "/186张蓝图";
         if (blueprintnum == 186) {
@@ -194,7 +194,16 @@
         }
     }
 
-    var auto = setInterval(function () { reload() }, 1);
+
+    function preload() {
+        var precontent = "";
+        for (var i = 0; i < ships.length; i++) {
+            for (var j = 1; j < ships[i].length; j++) {
+                precontent += "<div id=" + String(i) + "+" + String(j) + " style=\"display:none;\" >" + names[i][0] + "-" + names[i][j] + "</div>";
+            }
+        }
+        document.getElementById("main").innerHTML = precontent;
+    }
 
 </script>
 <style>
@@ -222,7 +231,12 @@
     }
 </style>
 
-    <div id="new"></div>
-    <div id="boxes"></div>
-    <div id="bp"></div>
-    <div id="main"></div>
+<div id="new"></div>
+<div id="boxes"></div>
+<div id="bp"></div>
+<div id="main"></div>
+
+<script>
+    preload();
+    var auto = setInterval(function () { reload() }, 1);
+</script>
