@@ -162,7 +162,7 @@
                             document.getElementById("new").innerHTML = "获得了“" + names[id][0] + "-" + names[id][x] + "”";
                         }
                         else {
-                            document.getElementById("new").innerHTML = "“" + names[id][0] + "-" + names[id][x] + "”研究进度达到" + str(ships[id][x]) + "%";
+                            document.getElementById("new").innerHTML = "“" + names[id][0] + "-" + names[id][x] + "”研究进度达到" + String(ships[id][x]) + "%";
                         }
                     }
                     break;
@@ -195,7 +195,7 @@
     }
 
     function autorun() {
-        auto = setInterval(function () { reload() }, 5);
+        auto = setInterval(function () { reload() }, 1);
     }
 
 </script>
@@ -218,7 +218,6 @@
     #bp {
         color: #0bf;
     }
-
 
     #main {
         color: #fff;
