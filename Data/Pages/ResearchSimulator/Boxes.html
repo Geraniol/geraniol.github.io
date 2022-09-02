@@ -177,10 +177,14 @@
 
     function reload() {
         var blueprintnum = 0;
+        var blueprinttypes = 0;
         buybox300();
         boxes += 1;
         var shiplist = "";
         for (var i = 0; i < ships.length; i++) {
+            if (ships[i][0] == 100) {
+                blueprinttypes += 1;
+            }
             for (var j = 1; j < ships[i].length; j++) {
                 if (ships[i][j] == 100 && ships[i][0] == 100) {
                     if (document.getElementById(String(i) + "+" + String(j)).getAttribute("style") == "display:none;") {
@@ -197,7 +201,7 @@
         }
         // document.getElementById("main").innerHTML = shiplist;
         document.getElementById("boxes").innerHTML = "第" + boxes + "个箱子";
-        document.getElementById("bp").innerHTML = "已获得" + blueprintnum + "/186张蓝图";
+        document.getElementById("bp").innerHTML = "已获得" + blueprinttypes + "/57张蓝图<br>共计" + blueprintnum + "/186个子型号或模块";
         if (blueprintnum == 186) {
             clearInterval(auto);
             document.getElementById("new").innerHTML = "你已经获得了所有图纸";
@@ -255,5 +259,5 @@
 
 <script>
     window.onload = preload();
-    var auto = setInterval(function () { reload() }, 10);
+    var auto = setInterval(function () { reload() }, 1);
 </script>
