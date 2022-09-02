@@ -189,14 +189,12 @@
         document.getElementById("main").innerHTML = shiplist;
         document.getElementById("boxes").innerHTML = "第" + boxes + "个箱子";
         document.getElementById("bp").innerHTML = "已获得" + blueprintnum + "/186张蓝图";
-        if (blueprintnum < 186) {
-            autorun();
+        if (blueprintnum == 186) {
+            clearInterval(auto);
         }
     }
 
-    function autorun() {
-        auto = setTimeout(function () { reload() }, 0);
-    }
+    var auto = setInterval(function () { reload() }, 1);
 
 </script>
 <style>
@@ -224,9 +222,7 @@
     }
 </style>
 
-<body onload="autorun()">
     <div id="new"></div>
     <div id="boxes"></div>
     <div id="bp"></div>
     <div id="main"></div>
-</body>
