@@ -200,6 +200,8 @@
         document.getElementById("bp").innerHTML = "已获得" + blueprintnum + "/186张蓝图";
         if (blueprintnum == 186) {
             clearInterval(auto);
+            document.getElementById("new").innerHTML = "你已经获得了所有图纸";
+            document.getElementsByName("newship")[0].setAttribute("name", "oldship");
         }
     }
 
