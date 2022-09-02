@@ -196,7 +196,7 @@
 
     function autorun() {
         document.getElementById("auto").innerHTML = "";
-        auto = setInterval(function () { reload() }, 1);
+        auto = setInterval(function () { reload() }, 5);
     }
 
 </script>
@@ -220,14 +220,15 @@
         color: #0bf;
     }
 
-    #auto,
+
     #main {
         color: #fff;
     }
 </style>
 
-<div id="auto" onclick="autorun()">AutoRun</div>
-<div id="new"></div>
-<div id="boxes"></div>
-<div id="bp"></div>
-<div id="main"></div>
+<body onload="autorun()">
+    <div id="new"></div>
+    <div id="boxes"></div>
+    <div id="bp"></div>
+    <div id="main"></div>
+</body>
