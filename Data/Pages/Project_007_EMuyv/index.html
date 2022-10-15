@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link rel="shotcut icon" href="./icon.svg">
+    <title>电子木鱼</title>
+    <style>
+        * {
+            user-select: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #222;
+        }
+
+        #muyv {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            width: 80vmin;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <script>
+        document.onclick = function (event) {
+            const audio = document.createElement("audio");
+            audio.src = "./sound.mp3";
+            audio.play();
+            try {
+                clearInterval(timer);
+                span = document.getElementsByTagName("span")[0];
+                span.style.opacity = 0;
+            }
+            catch {
+                var span = document.createElement("span");
+                document.getElementsByTagName("body")[0].appendChild(span);
+                span.innerHTML = "功德+1";
+                span.style.color = "#bbb";
+                span.style.position = "fixed";
+                span.style.whiteSpace = "nowrap";
+            }
+            span.style.left = event.x + "px";
+            span.style.top = event.y + "px";
+            span.style.opacity = 1;
+            timer = setInterval(up, 10);
+        }
+        function up() {
+            span = document.getElementsByTagName("span")[0];
+            if (span.style.opacity > 0) {
+                span.style.top = (Number.parseInt(span.style.top) - 1) + "px";
+                span.style.opacity -= 0.01;
+            }
+            else {
+                clearInterval(timer);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="muyv">
+        <svg viewBox="0,0,40,40" xmlns="http://www.w3.org/2000/svg">
+            <title>Muyv</title>
+            <path id="path"
+                d="m0.39857,28.42899c0.49941,1.89775 3.39597,0.19976 5.19383,1.29846c1.79787,1.0987 4.89419,5.99288 20.37581,4.09514c15.48162,-1.89775 14.58269,-17.1796 12.68494,-17.37937c-1.89775,-0.19976 -6.59217,-0.19976 -11.38648,0.89893c-4.79431,1.0987 -13.48399,8.88945 -14.88233,4.99407c-1.39834,-3.89538 10.78719,-5.19383 16.28067,-6.09277c5.49348,-0.89893 8.09039,-1.69798 8.98933,-2.19739c0.89893,-0.49941 -3.09632,-9.38885 -14.58269,-8.19028c-11.48636,1.19858 -15.38174,7.79075 -16.97984,10.98696c-1.5981,3.19621 -2.09751,8.48992 -3.09632,8.88945c-0.99881,0.39953 -3.09632,0.79905 -2.59692,2.6968l0,0z"
+                opacity="NaN" fill="#ffffff" stroke="null" />
+        </svg>
+    </div>
+</body>
+
+</html>
