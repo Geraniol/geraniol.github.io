@@ -29,30 +29,30 @@
 
         .card {
             display: block;
-            width: 80mm;
+            border-radius: 12px;
+            width: 300px;
             height: 100%;
-            margin: 6mm;
-            border-radius: 3mm;
+            margin: 25px;
         }
 
         .card[mode="day"] {
             background-color: #ffffff;
-            box-shadow: 0 1mm 2mm 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
 
         .card[mode="night"] {
             background-color: #dddddd;
-            box-shadow: 0 0 2mm 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
         }
 
         .card:hover[mode="day"] {
             transform: scale(1.02);
-            box-shadow: 0 2mm 4mm 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
 
         .card:hover[mode="night"] {
             transform: scale(1.01);
-            box-shadow: 0 0 2mm 0 rgba(127, 191, 255, 0.5);
+            box-shadow: 0 0 8px 0 rgba(127, 191, 255, 0.5);
         }
 
         .card:active[mode="day"] {
@@ -64,10 +64,10 @@
         }
 
         img {
-            width: 80mm;
-            height: 80mm;
+            width: 300px;
+            height: 300px;
             object-fit: cover;
-            border-radius: 3mm 3mm 0 0;
+            border-radius: 12px 12px 0 0;
         }
 
         img[mode="day"] {
@@ -79,12 +79,12 @@
         }
 
         .container {
-            padding: 4mm 8mm;
+            padding: 16px 24px;
         }
 
         b {
+            font-size: 24px;
             font-weight: bold;
-            font-size: x-large;
         }
 
         b[mode="day"] {
@@ -96,6 +96,7 @@
         }
 
         p {
+            font-size: 16px;
             font-weight: light;
             text-align: justify;
             overflow: hidden;
@@ -109,6 +110,48 @@
 
         p[mode="night"] {
             color: #999999;
+        }
+
+        @media (min-resolution: 300dpi) {
+            .card {
+                border-radius: 24px;
+                width: 600px;
+                margin: 50px;
+            }
+
+            .card[mode="day"] {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .card[mode="night"] {
+                box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.5);
+            }
+
+            .card:hover[mode="day"] {
+                box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .card:hover[mode="night"] {
+                box-shadow: 0 0 16px 0 rgba(127, 191, 255, 0.5);
+            }
+
+            img {
+                width: 600px;
+                height: 600px;
+                border-radius: 24px 24px 0 0;
+            }
+
+            .container {
+                padding: 32px 48px;
+            }
+
+            b {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 32px;
+            }
         }
     </style>
 </head>
