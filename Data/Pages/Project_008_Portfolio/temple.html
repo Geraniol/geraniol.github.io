@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <link href="https://geraniol.github.io/Data/images/Today's_Chicken/logo.png" rel="icon" type="image/x-ico">
+    <title>作品集 Portfolio</title>
+    <style>
+        * {
+            user-select: none;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            transition: 0.3s;
+        }
+
+        body[mode="day"] {
+            background-color: #ffffff;
+        }
+
+        body[mode="night"] {
+            background-color: #222222;
+        }
+
+        #root {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .card {
+            display: block;
+            width: 300px;
+            height: 100%;
+            margin: 25px;
+            border-radius: 12px;
+        }
+
+        .card[mode="day"] {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card[mode="night"] {
+            background-color: #dddddd;
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover[mode="day"] {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover[mode="night"] {
+            transform: scale(1.01);
+            box-shadow: 0 0 8px 0 rgba(127, 191, 255, 0.5);
+        }
+
+        .card:active[mode="day"] {
+            transform: scale(0.98);
+        }
+
+        .card:active[mode="night"] {
+            transform: scale(0.99);
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+
+        img[mode="day"] {
+            filter: brightness(100%);
+        }
+
+        img[mode="night"] {
+            filter: brightness(80%);
+        }
+
+        .container {
+            padding: 16px 24px;
+        }
+
+        b {
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        b[mode="day"] {
+            color: #444444;
+        }
+
+        b[mode="night"] {
+            color: #333333;
+        }
+
+        p {
+            font-weight: light;
+            text-align: justify;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        p[mode="day"] {
+            color: #aaaaaa;
+        }
+
+        p[mode="night"] {
+            color: #999999;
+        }
+    </style>
+</head>
+
+<body mode="day">
+    <div id="root"></div>
+</body>
+<script>
+    var database = ["python_database"];
+    for (i = 0; i < database.length; i++) {
+        var image = database[i][0];
+        var title = database[i][1];
+        var describe = database[i][2];
+        document.getElementById("root").innerHTML += '\
+            <div class="card" mode="day">\
+                <img src="' + image + '" mode="day">\
+                <div class="container">\
+                    <b mode="day">' + title + '</b>\
+                    <p mode="day">' + describe + '</p>\
+                </div>\
+            </div>';
+    }
+
+    function changemode() {
+        var items = document.querySelectorAll("[mode='day']");
+        if (items.length > 0) {
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute("mode", "night");
+            }
+        }
+        else {
+            items = document.querySelectorAll("[mode='night']");
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute("mode", "day");
+            }
+        }
+    }
+</script>
+
+</html>

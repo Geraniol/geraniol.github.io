@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <link href="https://geraniol.github.io/Data/images/Today's_Chicken/logo.png" rel="icon" type="image/x-ico">
+    <title>作品集 Portfolio</title>
+    <style>
+        * {
+            user-select: none;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            transition: 0.3s;
+        }
+
+        body[mode="day"] {
+            background-color: #ffffff;
+        }
+
+        body[mode="night"] {
+            background-color: #222222;
+        }
+
+        #root {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .card {
+            display: block;
+            width: 300px;
+            height: 100%;
+            margin: 25px;
+            border-radius: 12px;
+        }
+
+        .card[mode="day"] {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card[mode="night"] {
+            background-color: #dddddd;
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover[mode="day"] {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover[mode="night"] {
+            transform: scale(1.01);
+            box-shadow: 0 0 8px 0 rgba(127, 191, 255, 0.5);
+        }
+
+        .card:active[mode="day"] {
+            transform: scale(0.98);
+        }
+
+        .card:active[mode="night"] {
+            transform: scale(0.99);
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+
+        img[mode="day"] {
+            filter: brightness(100%);
+        }
+
+        img[mode="night"] {
+            filter: brightness(80%);
+        }
+
+        .container {
+            padding: 16px 24px;
+        }
+
+        b {
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        b[mode="day"] {
+            color: #444444;
+        }
+
+        b[mode="night"] {
+            color: #333333;
+        }
+
+        p {
+            font-weight: light;
+            text-align: justify;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        p[mode="day"] {
+            color: #aaaaaa;
+        }
+
+        p[mode="night"] {
+            color: #999999;
+        }
+    </style>
+</head>
+
+<body mode="day">
+    <div id="root"></div>
+</body>
+<script>
+    var database = [['./images/000.jpg', '今日份のChicken', 'Describe: Null'], ['./images/001.jpg', 'Chicken Union 2020', '仿制海报'], ['./images/002.jpg', '酒杯少女', '手办'], ['./images/003.jpg', 'Futura', '仿制海报'], ['./images/004.jpg', 'Geraniol', '原始头像'], ['./images/005.jpg', '伞', 'Describe: Null'], ['./images/006.jpg', 'Gimdong 娘', '原创 1 号画作'], ['./images/007.jpg', '鸡蛋花', 'Describe: Null'], ['./images/008.jpg', '山、云与天空', '惬意的时光，高中教室外的风景'], ['./images/009.jpg', '镜子', '实验室里的意外发现让我得知了还有这种物品的存在'], ['./images/010.jpg', '窗外的风景（油画）', '家、城市与夕阳'], ['./images/011.jpg', '景观花', '见证了很多无意义的开销'], ['./images/012.jpg', '宿舍一角', '惬意的时光，大学宿舍外的风景'], ['./images/013.jpg', '奇幻的大学生活', '充满了不真实的感觉'], ['./images/014.jpg', '铝热熔融实验', '闪闪发光的高中回忆'], ['./images/015.jpg', '神秘的盒子', '她，惬意的夏日，以及漫不经心的高考']];
+    for (i = 0; i < database.length; i++) {
+        var image = database[i][0];
+        var title = database[i][1];
+        var describe = database[i][2];
+        document.getElementById("root").innerHTML += '\
+            <div class="card" mode="day">\
+                <img src="' + image + '" mode="day">\
+                <div class="container">\
+                    <b mode="day">' + title + '</b>\
+                    <p mode="day">' + describe + '</p>\
+                </div>\
+            </div>';
+    }
+
+    function changemode() {
+        var items = document.querySelectorAll("[mode='day']");
+        if (items.length > 0) {
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute("mode", "night");
+            }
+        }
+        else {
+            items = document.querySelectorAll("[mode='night']");
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute("mode", "day");
+            }
+        }
+    }
+</script>
+
+</html>
