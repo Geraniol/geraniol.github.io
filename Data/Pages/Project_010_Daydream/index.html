@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <link href="./icon.svg" rel="icon" type="image/x-ico">
+    <title>堕落的咏叹调</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: SpecialFont;
+        src: url(./font.ttf);
+    }
+
+    * {
+        user-select: none;
+        overflow: hidden;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    img {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    #messagebox {
+        height: 20vh;
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    }
+
+    #word {
+        margin-top: 5vh;
+        margin-left: 5vw;
+        color: rgba(255, 255, 255, 0.9);
+        font-family: "SpecialFont";
+        font-size: calc(3vh + 1vw);
+    }
+</style>
+
+<body onclick="refresh()">
+    <img src="./bg.jpg">
+    <div id="messagebox">
+        <div id="word"></div>
+    </div>
+</body>
+
+<script>
+    var flag = 0;
+    var t = 120; // ms
+    function refresh() {
+        if (flag == 0) {
+            flag = 1;
+            document.getElementById("word").innerText = "";
+            setTimeout(function () { document.getElementById("word").innerText += "无" }, t * 1);
+            setTimeout(function () { document.getElementById("word").innerText += "论" }, t * 2);
+            setTimeout(function () { document.getElementById("word").innerText += "是" }, t * 3);
+            setTimeout(function () { document.getElementById("word").innerText += "谁" }, t * 4);
+            setTimeout(function () { document.getElementById("word").innerText += "，" }, t * 5);
+            setTimeout(function () { document.getElementById("word").innerText += "皆" }, t * 6);
+            setTimeout(function () { document.getElementById("word").innerText += "坠" }, t * 7);
+            setTimeout(function () { document.getElementById("word").innerText += "入" }, t * 8);
+            setTimeout(function () { document.getElementById("word").innerText += "无" }, t * 9);
+            setTimeout(function () { document.getElementById("word").innerText += "底" }, t * 10);
+            setTimeout(function () { document.getElementById("word").innerText += "深" }, t * 11);
+            setTimeout(function () { document.getElementById("word").innerText += "渊" }, t * 12);
+            setTimeout(function () { document.getElementById("word").innerText += "。" }, t * 13);
+            setTimeout(function () { flag = 0 }, 1200);
+        }
+    }
+    window.onload = refresh();
+</script>
+
+</html>
