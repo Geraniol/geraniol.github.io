@@ -19,7 +19,7 @@
         padding: 0;
     }
 
-    img {
+    #image {
         position: fixed;
         height: 100vh;
         width: 100vw;
@@ -41,21 +41,28 @@
         font-family: "SpecialFont";
         font-size: calc(3vh + 1vw);
     }
+
+    .audio {
+        display: none;
+    }
 </style>
 
-<body onclick="refresh()">
-    <img src="./bg.jpg">
+<body onclick="refresh(0)">
+    <img id="image" src="./bg.jpg">
     <div id="messagebox">
         <div id="word"></div>
     </div>
+    <audio class="audio" src="./audio1.mp3" preload></audio>
+    <audio class="audio" src="./audio2.mp3" preload></audio>
+    <audio class="audio" src="./audio3.mp3" preload></audio>
 </body>
 
 <script>
     var flag = 0;
     var t = 120; // ms
-    function refresh() {
+    var audios = document.getElementsByClassName("audio");
+    function refresh(argc) {
         if (flag == 0) {
-            flag = 1;
             document.getElementById("word").innerText = "";
             setTimeout(function () { document.getElementById("word").innerText += "无" }, t * 1);
             setTimeout(function () { document.getElementById("word").innerText += "论" }, t * 2);
@@ -70,10 +77,18 @@
             setTimeout(function () { document.getElementById("word").innerText += "深" }, t * 11);
             setTimeout(function () { document.getElementById("word").innerText += "渊" }, t * 12);
             setTimeout(function () { document.getElementById("word").innerText += "。" }, t * 13);
-            setTimeout(function () { flag = 0 }, t * 13);
+            flag = 1;
+            if (argc == 0) {
+                audio = audios[Math.floor((Math.random() * 3))];
+                audio.play();
+                audio.addEventListener('ended', function () { flag = 0 });
+            }
+            else {
+                setTimeout(function () { flag = 0 }, t * 13);
+            }
         }
     }
-    window.onload = refresh();
+    window.onload = refresh(1);
 </script>
 
 </html>
