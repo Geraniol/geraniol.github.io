@@ -1,86 +1,51 @@
-# 档案手册
+# <img src="./Pages/Public/icon/Logo.svg" width="20em"> **档案手册**  
 
-![Today's Chicken](./Data/images/Today's_Chicken/Community_bg.png)
+## **来源与方向**  
 
-一个网页项目试验集成部署页面。
+- **来源**  
+较早的部分页面改造自一些范例  
+晚期页面大部分为自制  
+- **用途**  
+网页开发测试  
+网页应用部署  
+整蛊 :)  
 
-## 主页
+## **使用说明**  
 
-原主页网页结构混乱，兼容性、扩展性较差，故此原主页入口已暂时关闭 ~~（页面里的关闭缘由是唬人的呵呵）~~ ，目前网站的索引页在[这里](https://geraniol.github.io/index_ex)。
+- **EX 版本**  
+本项目很多网页都有 EX 版本，在网页后面增加 `index_ex` 即可访问。例如：  
+正常版本：`https://geraniol.github.io/`  
+特殊版本：`https://geraniol.github.io/index_ex`  
+后续可能会考虑增加 `index-ex`、`ex` 等 ~~健忘~~ 便捷版本  
+- **Python**  
+有些网页项目可能会用到其他程序（例如 Python）来生成内容，所以在某些项目中可能会见到 Python 代码文件。  
+大部分程序中会尽量使用 Javascript 来确保通用性。  
 
-## EX 版本
+## **结构说明**  
 
-本项目很多网页都有 EX 版本，在网页后面增加 `index_ex` 即可访问。例如：
-<br>`https://geraniol.github.io/` 是原主页（已暂停访问）
-<br>`https://geraniol.github.io/index_ex` 是新索引页
+- ~~**Data**~~  
+~~原子页面目录~~（已废弃，原目录保留为兼容性选项）  
+- **Pages**  
+子页面目录  
+- ~~**index.html**~~  
+~~项目主页~~（维护中）
+- **index-ex.html**  
+项目索引页  
+- **README.md**  
+项目说明文档  
 
-## 目录结构
+## **开发计划**  
+- **没有长期的固定计划**  
+- **提高网页兼容性、扩展性**  
+由于原主页兼容性、扩展性欠佳 ~~页面中的原因是唬人的呵呵~~，已暂时关闭入口。其导航功能由[临时的项目索引页](https://geraniol.github.io/index_ex.html)替代。  
+网页内容会逐步更新，原索引会保留至大部分项目翻新完成，在此之前会链接至原有网页。  
+翻新后新索引会链接至新地址，最大程度保证可用性。  
+没有翻新的原项目会保留原路径与文件，经过更新后的原项目会使用新的目录与文件，并将原文件改为指向新地址的转跳页面。  
+- **继续添加应用性页面**  
+例如设计视觉小说模块 ~~以及更多整蛊模块~~  
+- **丰富展示页面，添加更多作品**  
+~~赛博涂鸦者~~  
 
-```
-Root
-|
-+-- Data
-|   +-- Pages                           --- 子页面
-|   |   +-- Project_001_AnimeGirl       --- 互动桌面：插画少女
-|   |   +-- Project_002_Star            --- 动态桌面：寂静星球
-|   |   |   +-- ex                      --- 动态桌面：迷你星球
-|   |   +-- Project_003_Chocolate       --- 互动桌面：巧克力
-|   |   +-- Project_004_CodePage        --- 技术：代码框架自适应
-|   |   |   +-- ex                      --- 技术：室友监视器
-|   |   +-- Project_005_FlowPage        --- 应用：瀑布流作品展示
-|   |   |   +-- ex                      --- 应用：气突苏
-|   |   +-- Project_006_Switch          --- 技术：开关与音乐
-|   |   +-- Project_007_EMuyv           --- 应用：电子木鱼
-|   |   |   +-- ex                      --- 应用：全自动木鱼
-|   |   +-- Project_008_Portfolio       --- 技术：卡片式作品展示
-|   |   +-- Project_009_DevInf          --- 技术：设备开发信息
-|   |   +-- Project_010_Daydream        --- 应用：视觉小说
-|   |   +-- CUHKSZPASSPORT              --- 大学：通行证（已停用）
-|   |   |   +-- ex                      --- 大学：通行证
-|   |   +-- CUHKSZSU-Umbrella           --- 大学：学生会雨伞
-|   |   +-- Recruitment                 --- 大学：学生会招新需求
-|   |   +-- Lagrange                    --- 拉格朗日：档案
-|   |   +-- ResearchSimulator           --- 拉格朗日：研究模拟器
-|   +-- fonts
-|   |   +-- qiantubifengshouxie.ttf     --- 字体（已停用；主页用）
-|   +-- images
-|       +-- Today's_Chicken
-|           +-- logo.png                --- 主页 Logo
-+-- index.html                          --- 主页（已停用）
-+-- index_ex.html                       --- 索引页
-+-- main.css                            --- 样式表（已停用；主页用）
-+-- README.md                           --- 项目档案手册
-```
-
-## 开发计划
-
-- 没有长期的固定计划。
-- 由于文档结构欠佳，可能进行大规模删改，届时大部分原有链接都会失效。
-- 继续添加前端应用性网页。
-- 完善作品展示页面，添加更多作品。
-- 除 HTML 文档本身外，可能还会上传由 Python 编写的 HTML 生成器。
-
-:)
-
-## 附录：规划中的目录结构
-
-```
-Root
-|
-+-- index.html
-+-- index_ex.html
-+-- Pages
-    +-- Project_001
-    |   +-- index.html
-    |   +-- index_ex.html
-    +-- Project_002
-    |   +-- index.html
-    |   +-- index_ex.html
-    +-- Project_003
-    |   +-- index.html
-    |   +-- index_ex.html
-    +-- Public
-        +-- img
-        +-- css
-        +-- js
-```
+## **其他**  
+- **[赞助：Steam 愿望单](https://store.steampowered.com/wishlist/profiles/76561199089877858/)**  
+- **[电报讨论组（NSFW）](https://t.me/+94Cepvt2pbswNWJl)**  
