@@ -4,13 +4,13 @@
 
 ## 主页
 
-原主页网页结构混乱，兼容性、扩展性较差，故此原主页入口已暂时关闭 ~~（页面里的关闭缘由是唬人的呵呵）~~ ，目前网站的索引页在[这里](https://geraniol.github.io/index_ex)。
+原主页网页结构混乱，兼容性、扩展性较差，故此原主页入口已暂时关闭 ~~（页面里的关闭缘由是唬人的呵呵）~~ 。目前网站的索引页在[这里](https://geraniol.github.io/index_ex)。
 
 ## EX 版本
 
 本项目很多网页都有 EX 版本，在网页后面增加 `index_ex` 即可访问。例如：
-`https://geraniol.github.io/` 是原主页（已暂停访问）
-`https://geraniol.github.io/index_ex` 是新索引页
+<br>`https://geraniol.github.io/` 是原主页（已暂停访问）
+<br>`https://geraniol.github.io/index_ex` 是新索引页
 
 ## 目录结构
 
