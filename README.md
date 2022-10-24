@@ -1,12 +1,12 @@
 # 档案手册
 
-![Today's Chicken](./Data/images/Today's_Chicken/Community_bg.png "Today's Chicken")
+![Today's Chicken](./Data/images/Today's_Chicken/Community_bg.png)
 
 一个网页项目试验集成部署页面。
 
 ## 主页
 
-原主页网页结构混乱，兼容性、扩展性较差，故此原主页入口已暂时关闭 ~~（页面里的关闭缘由是唬人的呵呵）~~ 。目前网站的索引页在[这里](https://geraniol.github.io/index_ex)。
+原主页网页结构混乱，兼容性、扩展性较差，故此原主页入口已暂时关闭 ~~（页面里的关闭缘由是唬人的呵呵）~~ ，目前网站的索引页在[这里](https://geraniol.github.io/index_ex)。
 
 ## EX 版本
 
@@ -49,6 +49,7 @@ Root
 +-- index.html                          --- 主页（已停用）
 +-- index_ex.html                       --- 索引页
 +-- main.css                            --- 样式表（已停用；主页用）
++-- README.md                           --- 项目档案手册
 ```
 
 ## 开发计划
