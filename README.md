@@ -29,7 +29,7 @@
 子页面目录  
 - ~~**index.html**~~  
 ~~项目主页~~（维护中）
-- **index-ex.html**  
+- **index_ex.html**  
 项目索引页  
 - **README.md**  
 项目说明文档  
