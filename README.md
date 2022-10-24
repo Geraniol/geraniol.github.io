@@ -65,6 +65,8 @@ Root
 ## 附录：规划中的目录结构
 
 ```
+Root
+|
 +-- index.html
 +-- index_ex.html
 +-- Pages
