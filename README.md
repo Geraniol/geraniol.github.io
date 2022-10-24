@@ -1,5 +1,7 @@
 # 档案手册
 
+![Today's Chicken](./Data/images/Today's_Chicken/Community_bg.png "Today's Chicken")
+
 一个网页项目试验集成部署页面。
 
 ## 主页
