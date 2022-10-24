@@ -61,3 +61,24 @@ Root
 - 除 HTML 文档本身外，可能还会上传由 Python 编写的 HTML 生成器。
 
 :)
+
+## 附录：规划中的目录结构
+
+```
++-- index.html
++-- index_ex.html
++-- Pages
+    +-- Project_001
+    |   +-- index.html
+    |   +-- index_ex.html
+    +-- Project_002
+    |   +-- index.html
+    |   +-- index_ex.html
+    +-- Project_003
+    |   +-- index.html
+    |   +-- index_ex.html
+    +-- Public
+        +-- img
+        +-- css
+        +-- js
+```
