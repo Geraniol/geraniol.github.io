@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../Public/icon/Logo.svg" rel="icon" type="image/x-icon">
+    <title>Backgrounds 动态桌面</title>
+</head>
+
+<style>
+    * {
+        user-select: none;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #222222;
+        padding: 5px;
+    }
+
+    #box {
+        padding: 15px;
+    }
+
+    iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 10px;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.2s;
+        font-size: xx-large;
+    }
+
+    a:hover,
+    a:active {
+        text-shadow: 0 0 3px #dddddd;
+    }
+</style>
+
+<body>
+    <div id="root">
+        <div id="box">
+            <iframe src="./AnimeGirl/index.html"></iframe>
+            <a href="./AnimeGirl/index.html">交互式 动态桌面：插画少女</a>
+        </div>
+        <div id="box">
+            <iframe src="./Chocolate/index.html"></iframe>
+            <a href="./Chocolate/index.html">交互式 动态桌面：巧克力</a>
+        </div>
+        <div id="box">
+            <iframe src="./Planet/index.html"></iframe>
+            <a href="./Planet/index.html">场景式 动态桌面：寂静星球</a>
+        </div>
+        <div id="box">
+            <iframe src="./Planet/index_ex.html"></iframe>
+            <a href="./Planet/index_ex.html">场景式 动态桌面：迷你星球</a>
+        </div>
+    </div>
+</body>
+
+</html>
