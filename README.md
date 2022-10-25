@@ -47,5 +47,7 @@
 ~~赛博涂鸦者~~  
 
 ## **其他**  
+- ~~**[项目主页](https://geraniol.github.io/index.html)**~~（维护中）  
+- **[项目索引页](https://geraniol.github.io/index_ex.html)**  
 - **[赞助：Steam 愿望单](https://store.steampowered.com/wishlist/profiles/76561199089877858/)**  
 - **[电报讨论组（NSFW）](https://t.me/+94Cepvt2pbswNWJl)**  
