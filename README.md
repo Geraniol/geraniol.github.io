@@ -13,9 +13,9 @@
 ## **使用说明**  
 
 - **EX 版本**  
-本项目很多网页都有 EX 版本，在网页后面增加 `index_ex` 即可访问。例如：  
-正常版本：`https://geraniol.github.io/`  
-特殊版本：`https://geraniol.github.io/index_ex`  
+本项目很多网页都有 EX 版本，在 URL 中的 `index` 后面增加 `_ex` 即可访问。例如：  
+正常版本：`https://geraniol.github.io/index.html`  
+特殊版本：`https://geraniol.github.io/index_ex.html`  
 后续可能会考虑增加 `index-ex`、`ex` 等 ~~健忘~~ 便捷版本  
 - **Python**  
 有些网页项目可能会用到其他程序（例如 Python）来生成内容，所以在某些项目中可能会见到 Python 代码文件。  
@@ -27,11 +27,11 @@
 ~~原子页面目录~~（已废弃，原目录保留为兼容性选项）  
 - **Pages**  
 子页面目录  
-- ~~**index.html**~~  
+- ~~**[index.html](./index.html)**~~  
 ~~项目主页~~（维护中）
-- **index_ex.html**  
+- **[index_ex.html](./index_ex.html)**  
 项目索引页  
-- **README.md**  
+- **[README.md](./README.md)**  
 项目说明文档  
 
 ## **开发计划**  

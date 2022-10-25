@@ -1,67 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
 <head>
-    <link href="./Data/images/Today's_Chicken/logo.png" rel="icon" type="image/x-ico">
+    <meta charset="UTF-8">
+    <link href="./Pages/Public/icon/logo.svg" rel="icon" type="image/x-ico">
     <title>项目纵览目录</title>
-    <style>
-        body {
-            background-color: #111111;
-        }
-
-        #root {
-            line-height: 6vw;
-            padding: 4vw;
-        }
-
-        .nav {
-            display: block;
-        }
-
-        a {
-            font-size: 4vw;
-            color: #bbbbbb;
-            text-decoration: none;
-            transition: 0.2s;
-        }
-
-        a:hover,
-        a:active {
-            color: #ffffff;
-            text-shadow: 0 0 1vw #bbbbbb;
-        }
-    </style>
 </head>
+
+<style>
+    * {
+        user-select: none;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #111111;
+    }
+
+    #root {
+        line-height: 6vw;
+        padding: 4vw;
+    }
+
+    a {
+        display: block;
+        font-size: 4vw;
+        color: #bbbbbb;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+
+    a:hover,
+    a:active {
+        color: #ffffff;
+        text-shadow: 0 0 1vw #bbbbbb;
+    }
+</style>
 
 <body>
     <div id="root">
-        <a class="nav" id="0" href="./Data/Pages/Project_001_AnimeGirl/">项目1 动态背景-插画少女</a>
-        <a class="nav" id="0" href="./Data/Pages/Project_002_Star/">项目2 动态背景-灰色星球</a>
-        <a class="nav" id="1" href="./Data/Pages/Project_002_Star/index_ex">细环星球</a>
-        <a class="nav" id="0" href="./Data/Pages/Project_004_CodePage/">项目4 代码展示页</a>
-        <a class="nav" id="1" href="./Data/Pages/Project_004_CodePage/index_ex">室友监视器</a>
-        <a class="nav" id="0" href="./Data/Pages/Project_005_FlowPage/">项目5 作品展示页</a>
-        <a class="nav" id="1" href="./Data/Pages/Project_005_FlowPage/index_ex">气突苏</a>
-        <a class="nav" id="0" href="./Data/Pages/Project_007_EMuyv/">项目7 电子木鱼</a>
-        <a class="nav" id="1" href="./Data/Pages/Project_007_EMuyv/index_ex">全自动电子木鱼</a>
-        <a class="nav" id="0" href="./Data/Pages/Project_008_Portfolio/">项目8 作品集卡片</a>
-        <a class="nav" id="0" href="./Data/Pages/Project_009_DevInf/">项目9 设备信息查询（520KB）</a>
-        <a class="nav" id="0" href="./Data/Pages/Project_010_Daydream/">项目10 ～幻想～蝴蝶飞舞之时：堕落的咏叹调</a>
+        <a level="0" name="动态背景" href="./Pages/001-Background/index.html"></a>
+        <a level="1" name="插画少女" href="./Pages/001-Background/AnimeGirl/index.html"></a>
+        <a level="1" name="巧克力" href="./Pages/001-Background/Chocolate/index.html"></a>
+        <a level="1" name="寂静星球" href="./Pages/001-Background/Planet/index.html"></a>
         <br>
-        <a class="nav" id="0" href="./Data/Pages/Recruitment/">项目S1 学生会宣传部招新计划</a>
-        <a class="nav" id="0" href="./Data/Pages/CUHKSZSU-Umbrella/">项目S2 学生会雨伞设计</a>
-        <a class="nav" id="0" href="./Data/Pages/CUHKSZPASSPORT/">项目S3Fake学校通行证白嫖页面</a>
-        <a class="nav" id="1" href="./Data/Pages/CUHKSZPASSPORT/index_ex">项目S3学校通行证</a>
-        <br>
-        <a class="nav" id="0" href="./Data/Pages/Lagrange/Painting">项目L1 拉格朗日-涂装</a>
-        <a class="nav" id="0" href="./Data/Pages/Lagrange/WeaponTech">项目L2 拉格朗日-武器技术</a>
-        <a class="nav" id="0" href="./Data/Pages/Lagrange/HEXColors">项目L3 拉格朗日-渐变字生成器</a>
-        <a class="nav" id="1" href="./Data/Pages/Lagrange/HEXColorsPlus">兼容性-手动版本</a>
-        <a class="nav" id="0" href="./Data/Pages/ResearchSimulator/Boxes">项目L4 拉格朗日-开箱模拟器</a>
-        <br>
-        <a class="nav" id="0" href="https://t.me/+94Cepvt2pbswNWJl">电报涩涩讨论组（NSFW）</a>
+        <a level="0" name="赞助：Steam 愿望单" href="https://store.steampowered.com/wishlist/profiles/76561199089877858/"></a>
+        <a level="0" name="电报讨论组（NSFW）" href="https://t.me/+94Cepvt2pbswNWJl"></a>
     </div>
 </body>
+
 <script>
-    var navs = document.getElementsByClassName("nav");
-    for (i = 0; i < navs.length; i++) {
-        navs[i].setAttribute("style", "margin-left:" + String(Number(navs[i].getAttribute("id")) * 4) + "vw;");
+    var links = document.getElementsByTagName("a");
+    for (var i = 0; i < links.length; i++) {
+        links[i].innerText = links[i].getAttribute("name");
+        links[i].setAttribute("style", "margin-left:" + String(Number(links[i].getAttribute("level")) * 4) + "vw;");
     }
 </script>
+
+</html>
