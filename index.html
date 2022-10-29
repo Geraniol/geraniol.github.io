@@ -90,7 +90,6 @@
         top: 2vh;
         right: 2vw;
         z-index: 1;
-        transform: scale(0.8);
     }
 
     #modebtn {
@@ -197,6 +196,10 @@
 
     /* Mobile */
     @media (max-aspect-ratio: 7 / 10) {
+        #modeswitch {
+            transform: scale(1.2);
+        }
+
         .card {
             width: 100%;
             margin-top: 15px;
@@ -212,6 +215,10 @@
 
     /* Wide */
     @media (min-aspect-ratio: 7 / 10) {
+        #modeswitch {
+            transform: scale(0.8);
+        }
+
         #bg:active {
             object-fit: contain;
             -o-object-fit: contain;
