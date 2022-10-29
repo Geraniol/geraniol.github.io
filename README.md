@@ -28,7 +28,7 @@
 - **Pages**  
 子页面目录  
 - ~~**[index.html](./index.html)**~~  
-~~项目主页~~（维护中）
+项目主页~~（维护中）~~（搭建框架完成，预览允许，但数据库仍需填充，最终效果才能呈现）  
 - **[index_ex.html](./index_ex.html)**  
 项目索引页  
 - **[README.md](./README.md)**  
@@ -45,9 +45,11 @@
 例如设计视觉小说模块 ~~以及更多整蛊模块~~  
 - **丰富展示页面，添加更多作品**  
 ~~赛博涂鸦者~~  
+- **编写管理程序，辅助作品登记录入**  
+如题  
 
 ## **其他**  
-- ~~**[项目主页](https://geraniol.github.io/index.html)**~~（维护中）  
+- **[项目主页](https://geraniol.github.io/index.html)**~~（维护中）~~（基本框架完成）  
 - **[项目索引页](https://geraniol.github.io/index_ex.html)**  
 - **[赞助：Steam 愿望单](https://store.steampowered.com/wishlist/profiles/76561199089877858/)**  
 - **[电报讨论组（NSFW）](https://t.me/+94Cepvt2pbswNWJl)**  
