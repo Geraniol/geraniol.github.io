@@ -63,7 +63,8 @@
         box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
     }
 
-    #bg[mode="dark"] {
+    #bg[mode="dark"],
+    .preview[mode="dark"] {
         filter: brightness(90%);
     }
 
@@ -77,13 +78,13 @@
     #box[mode="light"] {
         color: rgba(20, 20, 20, 1);
         background-color: rgba(255, 255, 255, 0.5);
-        box-shadow: 0 0 15vh rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     }
 
     #box[mode="dark"] {
         color: rgba(240, 240, 240, 1);
         background-color: rgba(30, 30, 30, 0.5);
-        box-shadow: 0 0 15vh rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
     }
 
     .switch {
@@ -130,82 +131,157 @@
         align-content: center;
     }
 
+    .card {
+        border-radius: 30px;
+    }
+
+    .card[mode="light"] {
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .card[mode="dark"] {
+        background-color: rgba(30, 30, 30, 1);
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+
+    .card[mode="light"]:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .card[mode="dark"]:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+
+    .card[mode="light"]:active {
+        transform: scale(0.95);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card[mode="dark"]:active {
+        transform: scale(0.95);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .preview {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .tags {
+        padding: 20px 30px 0 30px;
+    }
+
+    .tag {
+        /* color: rgba(20, 20, 20, 1); */
+        display: inline-block;
+        padding: 1px 9px 1px 9px;
+        margin: 0 10px 0 0;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .tag[mode="light"] {
+        text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+    }
+
+    .tag[mode="dark"] {
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+
+    #design[mode="light"] {
+        background-color: rgba(100, 255, 150, 1);
+    }
+
+    #modeling[mode="light"] {
+        background-color: rgba(255, 100, 100, 1);
+    }
+
+    #photography[mode="light"] {
+        background-color: rgba(100, 215, 255, 1);
+    }
+
+    #coding[mode="light"] {
+        background-color: rgba(255, 185, 100, 1);
+    }
+
+    #design[mode="dark"] {
+        background-color: rgba(70, 200, 90, 1);
+    }
+
+    #modeling[mode="dark"] {
+        background-color: rgba(220, 90, 90, 1);
+    }
+
+    #photography[mode="dark"] {
+        background-color: rgba(90, 160, 200, 1);
+    }
+
+    #coding[mode="dark"] {
+        background-color: rgba(220, 150, 80, 1);
+    }
+
+    .title {
+        padding: 20px 30px 0 30px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .describe {
+        padding: 10px 30px 30px 30px;
+        text-align: justify;
+    }
+
     /* Mobile */
     @media (max-aspect-ratio: 7 / 10) {
         .card {
-            width: 100vw;
+            width: 100%;
             margin-top: 15px;
             margin-bottom: 15px;
-            border-radius: 30px;
-        }
-
-        .card[mode="light"] {
-            background-color: rgba(255, 255, 255, 1);
-            box-shadow: 0 0 15vh rgba(0, 0, 0, 0.5);
-        }
-
-        .card[mode="dark"] {
-            background-color: rgba(30, 30, 30, 1);
-            box-shadow: 0 0 15vh rgba(255, 255, 255, 0.3);
         }
 
         .preview {
             width: 100%;
-            border-radius: 30px 30px 0 0;
-        }
-
-        .title {
-            padding: 30px 30px 0 30px;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .describe {
-            padding: 15px 30px 30px 30px;
-            text-align: justify;
         }
     }
 
     /* Wide */
-    @media (min-aspect-ratio: 7 / 10) {}
+    @media (min-aspect-ratio: 7 / 10) {
+        .card {
+            width: 400px;
+            margin: 15px;
+        }
+
+        .preview {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            -o-object-fit: cover;
+        }
+
+        .describe {
+            font-weight: light;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
 </style>
 
 <body>
-    <div id="modeswitch" class="switch" onclick="switchMode()">
+    <div id="modeswitch" class="switch" onclick="switchMode()" title="切换深浅色模式">
         <div id="modebtn" class="btn" mode="light"></div>
     </div>
-    <img id="bg" mode="light" src="./Pages/Public/img/SAT.jpg">
+    <img id="bg" mode="light" src="./Pages/Public/img/SAT.jpg" title="长按查看全图">
     <div id="box" mode="light">
-        <div id="container">
-            <div class="card" mode="light">
-                <img src="./Pages/Public/img/JUP.jpg" class="preview" mode="light">
-                <div class="text">
-                    <div class="title" mode="light">This is a title.</div>
-                    <div class="describe" mode="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.</div>
-                </div>
-            </div>
-            <div class="card" mode="light">
-                <img src="./Pages/Public/img/JUP.jpg" class="preview" mode="light">
-                <div class="text">
-                    <div class="title" mode="light">This is a title.</div>
-                    <div class="describe" mode="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.</div>
-                </div>
-            </div>
-        </div>
+        <div id="container"></div>
     </div>
 </body>
 
+<script type="text/javascript" src="./Pages/Public/js/projects.js"></script>
 <script>
+
     function switchMode() {
         var elements = document.all;
         for (var i = 0; i < elements.length; i++) {
@@ -215,8 +291,20 @@
         }
     }
 
+    function addCard() {
+        for (var i = 0; i < projects.length; i++) {
+            document.getElementById("container").innerHTML += '<div class="card" mode="light" title="' + projects[i]["title"] + '\n' + projects[i]["describe"] + '" onclick="javascrtpt:window.location.href=\'' + projects[i]["preview"] + '\'"><img src="' + projects[i]["src"] + '" class="preview" mode="light"><div id="latest" class="tags"></div><div class="text"><div class="title" mode="light">' + projects[i]["title"] + '</div><div class="describe" mode="light">' + projects[i]["describe"] + '</div></div></div>';
+            if (projects[i]["tag"]["design"]) document.getElementById("latest").innerHTML += '<div id="design" class="tag" mode="light"> 设计</div>';
+            if (projects[i]["tag"]["modeling"]) document.getElementById("latest").innerHTML += '<div id="modeling" class="tag" mode="light">建模</div>';
+            if (projects[i]["tag"]["photography"]) document.getElementById("latest").innerHTML += '<div id="photography" class="tag" mode="light">摄影</div>';
+            if (projects[i]["tag"]["coding"]) document.getElementById("latest").innerHTML += '<div id="coding" class="tag" mode="light">编程</div>';
+            document.getElementById("latest").setAttribute("id", "");
+        }
+    }
+
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) switchMode();
 
+    addCard();
 </script>
 
 </html>
