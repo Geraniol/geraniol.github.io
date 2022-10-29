@@ -143,14 +143,6 @@
         font-size: 1rem;
     }
 
-    .tag[mode="light"] {
-        text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
-    }
-
-    .tag[mode="dark"] {
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-    }
-
     #design[mode="light"] {
         background-color: rgba(100, 255, 150, 1);
     }
@@ -168,19 +160,19 @@
     }
 
     #design[mode="dark"] {
-        background-color: rgba(70, 200, 90, 1);
+        background-color: rgba(20, 160, 20, 1);
     }
 
     #modeling[mode="dark"] {
-        background-color: rgba(220, 90, 90, 1);
+        background-color: rgba(160, 20, 20, 1);
     }
 
     #photography[mode="dark"] {
-        background-color: rgba(90, 160, 200, 1);
+        background-color: rgba(20, 100, 160, 1);
     }
 
     #coding[mode="dark"] {
-        background-color: rgba(220, 150, 80, 1);
+        background-color: rgba(180, 120, 20, 1);
     }
 
     .title {
@@ -296,7 +288,7 @@
 
     function addCard() {
         for (var i = 0; i < projects.length; i++) {
-            document.getElementById("container").innerHTML += '<div class="card" mode="light" title="' + projects[i]["title"] + '\n' + projects[i]["describe"] + '" onclick="javascrtpt:window.location.href=\'' + projects[i]["preview"] + '\'"><img src="' + projects[i]["src"] + '" class="preview" mode="light"><div id="latest" class="tags"></div><div class="text"><div class="title" mode="light">' + projects[i]["title"] + '</div><div class="describe" mode="light">' + projects[i]["describe"] + '</div></div></div>';
+            document.getElementById("container").innerHTML += '<div class="card" mode="light" title="' + projects[i]["title"] + '\n' + projects[i]["describe"] + '" onclick="javascrtpt:window.location.href=\'' + projects[i]["src"] + '\'"><img src="' + projects[i]["preview"] + '" class="preview" mode="light"><div id="latest" class="tags"></div><div class="text"><div class="title" mode="light">' + projects[i]["title"] + '</div><div class="describe" mode="light">' + projects[i]["describe"] + '</div></div></div>';
             if (projects[i]["tag"]["design"]) document.getElementById("latest").innerHTML += '<div id="design" class="tag" mode="light"> 设计</div>';
             if (projects[i]["tag"]["modeling"]) document.getElementById("latest").innerHTML += '<div id="modeling" class="tag" mode="light">建模</div>';
             if (projects[i]["tag"]["photography"]) document.getElementById("latest").innerHTML += '<div id="photography" class="tag" mode="light">摄影</div>';
