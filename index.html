@@ -1,56 +1,156 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-  <meta http-equiv="refresh" content="3;url=https://www.chinacourt.org/article/detail/2022/09/id/6900550.shtml">
-  <title>K.I.Squad-HomePage</title>
-  <meta charset="utf-8">
-  <link href="Data/images/Today's_Chicken/logo.png" rel="icon" type="image/x-ico">
-<!--
-  <link rel="stylesheet" href="main.css" type="text/css">
-  <link rel="font" href="main.css" type="text/css">
--->
+    <meta charset="UTF-8">
+    <link href="./Pages/Public/icon/Logo.svg" rel="icon" type="image/x-icon">
+    <title>Portfolio 作品集</title>
 </head>
 
+<style>
+    * {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        position: relative;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        transition: 0.2s;
+    }
+
+    /* @keyframes bgAnime {
+        0% {
+            margin: 100%;
+        }
+
+        100% {
+            background-position-y: 100%;
+        }
+    } */
+
+    #bg {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        -o-object-fit: cover;
+        z-index: -1;
+        background-image: repeating-linear-gradient(135deg, rgba(30, 30, 30, 1) 0, rgba(30, 30, 30, 1) 1%, rgba(50, 50, 50, 1) 1%, rgba(50, 50, 50, 1) 2%);
+        /* animation-name: bgAnime;
+        animation-duration: 5s;
+        animation-iteration-count: infinite; */
+    }
+
+    #bg:active {
+        object-fit: contain;
+        -o-object-fit: contain;
+    }
+
+    #bg:active+#box {
+        margin-top: 100vh;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    }
+
+    #bg[mode="dark"] {
+        filter: brightness(90%);
+    }
+
+    #box {
+        margin-top: 30vh;
+        min-height: calc(100vh - 30vh);
+        backdrop-filter: blur(5px) saturate(0.5) contrast(0.7);
+        -webkit-backdrop-filter: blur(5px) saturate(0.5) contrast(0.7);
+    }
+
+    #box[mode="light"] {
+        color: rgba(20, 20, 20, 1);
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 15vh rgba(0, 0, 0, 0.5);
+    }
+
+    #box[mode="dark"] {
+        color: rgba(240, 240, 240, 1);
+        background-color: rgba(30, 30, 30, 0.7);
+        box-shadow: 0 0 15vh rgba(255, 255, 255, 0.3);
+    }
+
+    .switch {
+        width: 70px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: rgba(100, 100, 100, 1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    }
+
+    #modeswitch {
+        position: fixed;
+        top: 2vh;
+        right: 2vw;
+        z-index: 1;
+        transform: scale(0.8);
+    }
+
+    #modebtn {
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        position: relative;
+        top: 5px;
+    }
+
+    #modebtn[mode="light"] {
+        left: 5px;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0 0 0 3px rgba(255, 255, 0, 0);
+    }
+
+    #modebtn[mode="dark"] {
+        left: 35px;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: -7px 0 0 3px rgba(255, 255, 0, 1) inset;
+    }
+
+    #container {
+        padding: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+</style>
+
 <body>
-<!--
-<div>
-  <p><h1 onclick="javascript:window.alert('别点啦，这个不能吃。。')">List of Projects:</h1></p>
-  <p><a href="Data/Pages/Project_006_Switch/index.html">
-      Switch｜社死按钮
-    </a></p>
-  <p><a href="Data/Pages/Project_004_CodePage/index.html" class="orange">
-      Sample Code｜代码页面
-    </a></p>
-  <p><a href="Data/Pages/Project_005_FlowPage/index.html" class="orange">
-      Flow Page｜瀑布流
-    </a></p>
-  <p><a href="Data/Pages/Project_001_AnimeGirl/index.html">
-      Anime Girl｜动态动漫壁纸
-    </a></p>
-  <p><a href="Data/Pages/Project_002_Star/index.html">
-      Star｜白色星球壁纸
-    </a></p>
-  <p><a href="Data/Pages/Project_003_Chocolate/index.html">
-      Chocolate｜巧克力
-    </a></p>
-  <h2 onclick="javascript:document.getElementById('secret').innerHTML='将橙色页面网址里的index.html改为index_ex.html试试'">Buy me a coffee, please!｜求赞助呜呜呜</h2>
-  <img src="Data/images/coffee/coffee_wmp.png" id="wmp"
-    onclick="javascript:this.style.backgroundColor='#fff'"></img>
-  <img src="Data/images/coffee/coffee_alipay.png" id="alipay"
-    onclick="javascript:this.style.backgroundColor='#fff'"></img>
-  <h3 id="secret" onclick="javascript:window.alert('别点啦，知足吧！都在这儿啦！')"></h3>
-</div>
--->
-<div align="center" style="font-size:xx-large;">
-因政策原因，该网站已暂时关闭。
-</div>
+    <div id="modeswitch" class="switch" onclick="switchMode()">
+        <div id="modebtn" class="btn" mode="light"></div>
+    </div>
+    <img id="bg" mode="light" src="./Pages/Public/img/SOPII.png">
+    <div id="box" mode="light">
+        <div id="container">
+            1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>
+            1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>1234567890<br>
+        </div>
+    </div>
 </body>
-<!--
+
 <script>
-  Array.prototype.forEach.call(document.getElementsByTagName("a"), function (obj) {
-    obj.style.transition = "0.3s"
-  })
+    function switchMode() {
+        var elements = document.all;
+        for (var i = 0; i < elements.length; i++) {
+            if (elements[i].getAttribute("mode") == "light") elements[i].setAttribute("mode", "dark");
+            else if (elements[i].getAttribute("mode") == "dark") elements[i].setAttribute("mode", "light");
+            else;
+        }
+    }
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) switchMode();
+
 </script>
--->
+
 </html>
