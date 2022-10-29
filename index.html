@@ -53,16 +53,6 @@
         animation-iteration-count: infinite; */
     }
 
-    #bg:active {
-        object-fit: contain;
-        -o-object-fit: contain;
-    }
-
-    #bg:active+#box {
-        margin-top: 100vh;
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
-    }
-
     #bg[mode="dark"],
     .preview[mode="dark"] {
         filter: brightness(90%);
@@ -131,10 +121,6 @@
         align-content: center;
     }
 
-    .card {
-        border-radius: 30px;
-    }
-
     .card[mode="light"] {
         background-color: rgba(255, 255, 255, 1);
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
@@ -143,30 +129,6 @@
     .card[mode="dark"] {
         background-color: rgba(30, 30, 30, 1);
         box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
-    }
-
-    .card[mode="light"]:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .card[mode="dark"]:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-    }
-
-    .card[mode="light"]:active {
-        transform: scale(0.95);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .card[mode="dark"]:active {
-        transform: scale(0.95);
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    }
-
-    .preview {
-        border-radius: 30px 30px 0 0;
     }
 
     .tags {
@@ -239,18 +201,31 @@
             width: 100%;
             margin-top: 15px;
             margin-bottom: 15px;
+            border-radius: 50px;
         }
 
         .preview {
             width: 100%;
+            border-radius: 50px 50px 0 0;
         }
     }
 
     /* Wide */
     @media (min-aspect-ratio: 7 / 10) {
+        #bg:active {
+            object-fit: contain;
+            -o-object-fit: contain;
+        }
+
+        #bg:active+#box {
+            margin-top: 100vh;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+        }
+
         .card {
             width: 400px;
             margin: 15px;
+            border-radius: 30px;
         }
 
         .preview {
@@ -258,6 +233,7 @@
             height: 400px;
             object-fit: cover;
             -o-object-fit: cover;
+            border-radius: 30px 30px 0 0;
         }
 
         .describe {
@@ -265,6 +241,26 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+        }
+
+        .card[mode="light"]:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card[mode="dark"]:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+        }
+
+        .card[mode="light"]:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card[mode="dark"]:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
         }
     }
 </style>
