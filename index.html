@@ -114,7 +114,6 @@
 
     #container {
         padding: 30px;
-        display: -webkit-flex;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -269,7 +268,7 @@
     <div id="modeswitch" class="switch" onclick="switchMode()" title="切换深浅色模式">
         <div id="modebtn" class="btn" mode="light"></div>
     </div>
-    <img id="bg" mode="light" src="./Pages/Public/img/SAT.jpg" title="长按查看全图">
+    <img id="bg" mode="light" src="./Pages/Public/img/SAT.jpg" title="长按查看全图" loading="eager">
     <div id="box" mode="light">
         <div id="container"></div>
     </div>
@@ -289,7 +288,7 @@
 
     function addCard() {
         for (var i = 0; i < projects.length; i++) {
-            document.getElementById("container").innerHTML += '<div class="card" mode="light" title="' + projects[i]["title"] + '\n' + projects[i]["describe"] + '" onclick="javascrtpt:window.location.href=\'' + projects[i]["src"] + '\'"><img src="' + projects[i]["preview"] + '" class="preview" mode="light"><div id="latest" class="tags"></div><div class="text"><div class="title" mode="light">' + projects[i]["title"] + '</div><div class="describe" mode="light">' + projects[i]["describe"] + '</div></div></div>';
+            document.getElementById("container").innerHTML += '<div class="card" mode="light" title="' + projects[i]["title"] + '\n' + projects[i]["describe"] + '" onclick="javascrtpt:window.location.href=\'' + projects[i]["src"] + '\'"><img src="' + projects[i]["preview"] + '" class="preview" mode="light" loading="lazy"><div id="latest" class="tags"></div><div class="text"><div class="title" mode="light">' + projects[i]["title"] + '</div><div class="describe" mode="light">' + projects[i]["describe"] + '</div></div></div>';
             if (projects[i]["tag"]["design"]) document.getElementById("latest").innerHTML += '<div id="design" class="tag" mode="light"> 设计</div>';
             if (projects[i]["tag"]["modeling"]) document.getElementById("latest").innerHTML += '<div id="modeling" class="tag" mode="light">建模</div>';
             if (projects[i]["tag"]["photography"]) document.getElementById("latest").innerHTML += '<div id="photography" class="tag" mode="light">摄影</div>';
