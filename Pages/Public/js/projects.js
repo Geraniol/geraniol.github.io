@@ -1379,5 +1379,233 @@ var projects =
                 "photography": 1,
                 "coding": 0,
             }
+        },
+        {
+            "title": "书院小狮子",
+            "preview": "./Pages/Public/img/pv/e67ebb4935bdc4b64943b63ed3d096223a6d60b7e5ba4e4c92d7113ec2481e40.jpg",
+            "src": "./Pages/Public/img/src/e67ebb4935bdc4b64943b63ed3d096223a6d60b7e5ba4e4c92d7113ec2481e40.png",
+            "describe": "书院表情包企划作品封面。获得一等奖。奖品是拍立得相机。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "奇怪的学生会",
+            "preview": "./Pages/Public/img/pv/b3113cc4ce46c33bd1beb07a3c182ec66f014b8173e2dc5c9e1eb3178727a761.jpg",
+            "src": "./Pages/Public/img/src/b3113cc4ce46c33bd1beb07a3c182ec66f014b8173e2dc5c9e1eb3178727a761.png",
+            "describe": "魔改学生会会徽。和原先的已经八竿子打不着了。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "狐狸",
+            "preview": "./Pages/Public/img/pv/99cc67b3673398cc2c31986c24b239b99c6c9365e59b6793994c8e649b31669b.jpg",
+            "src": "./Pages/Public/img/src/99cc67b3673398cc2c31986c24b239b99c6c9365e59b6793994c8e649b31669b.png",
+            "describe": "“觅雪冰城”活动表情包。仅在内部展示，没有进入量产。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "新年小狮子",
+            "preview": "./Pages/Public/img/pv/857860dc7a966e1dd80b9da3ad70a3f0f289d2f5a37c9cc29d822508bd2fd82d.jpg",
+            "src": "./Pages/Public/img/src/857860dc7a966e1dd80b9da3ad70a3f0f289d2f5a37c9cc29d822508bd2fd82d.png",
+            "describe": "小狮子表情包新年特供版本。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "元旦海报",
+            "preview": "./Pages/Public/img/pv/9b39b1b26ce66649b33999b6999666c9e6499936999c64c966669b2699992919.jpg",
+            "src": "./Pages/Public/img/src/9b39b1b26ce66649b33999b6999666c9e6499936999c64c966669b2699992919.png",
+            "describe": "二〇二二年元旦海报。中间是 Gimdong 娘。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "书签",
+            "preview": "./Pages/Public/img/pv/9a28695125ef96a5ce54986a4cd733ce29ea7671c730c35f8c3f1839adc0d391.jpg",
+            "src": "./Pages/Public/img/src/9a28695125ef96a5ce54986a4cd733ce29ea7671c730c35f8c3f1839adc0d391.png",
+            "describe": "复刻的书签。渲染效果图。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "书院",
+            "preview": "./Pages/Public/img/pv/946337386b9dcac7b4232d32c99c92873623c77e697d7c098d8691b2f21ceb05.jpg",
+            "src": "./Pages/Public/img/src/946337386b9dcac7b4232d32c99c92873623c77e697d7c098d8691b2f21ceb05.png",
+            "describe": "关于书院的设计。大致展现了书院的构造。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "日食",
+            "preview": "./Pages/Public/img/pv/f1005eaaf8001eaafa041faa5e95e7c016f5e3d01cfde2d41c7fe286145fe20f.jpg",
+            "src": "./Pages/Public/img/src/f1005eaaf8001eaafa041faa5e95e7c016f5e3d01cfde2d41c7fe286145fe20f.jpg",
+            "describe": "日环食。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "书院小狮子",
+            "preview": "./Pages/Public/img/pv/ff7a99f0a0d5575f800b98a3757d715380835a7f86d588f796402740962f678a.jpg",
+            "src": "./Pages/Public/img/src/ff7a99f0a0d5575f800b98a3757d715380835a7f86d588f796402740962f678a.png",
+            "describe": "书院小狮子表情包首个表情。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "奇怪的猫",
+            "preview": "./Pages/Public/img/pv/e476c9b7998d3258cb3284652599c99a38c69b38c63c64e379e39249999fcda6.jpg",
+            "src": "./Pages/Public/img/src/e476c9b7998d3258cb3284652599c99a38c69b38c63c64e379e39249999fcda6.png",
+            "describe": "源自校园巴士涂装一角。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "雪铃",
+            "preview": "./Pages/Public/img/pv/9a4a9aca64f9632d672c64b031b3e7a6cd699b2199e6698d9b3d92dac6583870.jpg",
+            "src": "./Pages/Public/img/src/9a4a9aca64f9632d672c64b031b3e7a6cd699b2199e6698d9b3d92dac6583870.png",
+            "describe": "雪铃·戴安娜，《魔女卡提》角色，失心魔女，原型为狼人。因为某些原因停更了。这张是 AI 描摹图像。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "先锋设计",
+            "preview": "./Pages/Public/img/pv/be0fc6f8c1e03b07ce1cb0f0e3f11e0e1e3ce3e348c8963d1b06e0f8b1a39f0e.jpg",
+            "src": "./Pages/Public/img/src/be0fc6f8c1e03b07ce1cb0f0e3f11e0e1e3ce3e348c8963d1b06e0f8b1a39f0e.png",
+            "describe": "为书院社团设计的周边图样。据闻没有进入量产。这是白色版本。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "先锋设计",
+            "preview": "./Pages/Public/img/pv/c0f039073e1ec4f831e16e569e1de1f163d21c1d962763d26cec97076e5e68e0.jpg",
+            "src": "./Pages/Public/img/src/c0f039073e1ec4f831e16e569e1de1f163d21c1d962763d26cec97076e5e68e0.png",
+            "describe": "为书院社团设计的周边图样。据闻没有进入量产。这是黑色版本。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "520 书签",
+            "preview": "./Pages/Public/img/pv/eb33cb4cf0f934e38e4c9393a6869d3d9e0f96669cb0c9b9618669c248d3664a.jpg",
+            "src": "./Pages/Public/img/src/eb33cb4cf0f934e38e4c9393a6869d3d9e0f96669cb0c9b9618669c248d3664a.png",
+            "describe": "书签送花图样。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "520 书签",
+            "preview": "./Pages/Public/img/pv/b9931e4cc4b465b1924cb3c79393cc6ccf1b39cb18e4c939cd926cc631b136ce.jpg",
+            "src": "./Pages/Public/img/src/b9931e4cc4b465b1924cb3c79393cc6ccf1b39cb18e4c939cd926cc631b136ce.png",
+            "describe": "书签心动图样。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "手机壳",
+            "preview": "./Pages/Public/img/pv/bd31f01ec0ce0f81c7116e7633ccf0d8247389fbfa820f67cc7d06654b3c721c.jpg",
+            "src": "./Pages/Public/img/src/bd31f01ec0ce0f81c7116e7633ccf0d8247389fbfa820f67cc7d06654b3c721c.png",
+            "describe": "为书院社团设计的周边图样。已经使用一年了。图为渲染图样。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "设计封面",
+            "preview": "./Pages/Public/img/pv/e74c899b9cb7c4643b98f4441b1b6b5b19dba4a695e4d1b3c4e4d99b63486644.jpg",
+            "src": "./Pages/Public/img/src/e74c899b9cb7c4643b98f4441b1b6b5b19dba4a695e4d1b3c4e4d99b63486644.png",
+            "describe": "参照动画设计的封面。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "苯环",
+            "preview": "./Pages/Public/img/pv/81d76c31370804ff59e77308249ab19f66614cd8e43396ce79b169343f0fc27b.jpg",
+            "src": "./Pages/Public/img/src/81d76c31370804ff59e77308249ab19f66614cd8e43396ce79b169343f0fc27b.png",
+            "describe": "复刻作品。有点过于圆润了。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "UNS 001",
+            "preview": "./Pages/Public/img/pv/ebaa4ebd9e59f1a7b1569b52912a25b60ea9ce886ad960859c769138b1b69172.jpg",
+            "src": "./Pages/Public/img/src/ebaa4ebd9e59f1a7b1569b52912a25b60ea9ce886ad960859c769138b1b69172.jpg",
+            "describe": "枪械。初中时期设计。部分零件通用。手枪版使用了扳机保险。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
         }
     ]
