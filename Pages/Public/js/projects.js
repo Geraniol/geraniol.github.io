@@ -2759,5 +2759,497 @@ var projects =
                 "photography": 0,
                 "coding": 0,
             }
+        },
+        {
+            "title": "忧郁头像",
+            "preview": "./Pages/Public/img/pv/fefee3e365c1e054b4df85ce8e2c4e018c39cc5b21b0a726b427924f8ad9f910.jpg",
+            "src": "./Pages/Public/img/src/fefee3e365c1e054b4df85ce8e2c4e018c39cc5b21b0a726b427924f8ad9f910.png",
+            "describe": "“YOU MADE ME BLUE”。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "暴躁头像",
+            "preview": "./Pages/Public/img/pv/f2de656b8d1194886e1b97dc0cea6e56992de79a41f58f18c4770cc28b25f10d.jpg",
+            "src": "./Pages/Public/img/src/f2de656b8d1194886e1b97dc0cea6e56992de79a41f58f18c4770cc28b25f10d.png",
+            "describe": "暴躁。暴躁。暴躁。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "限制级头像",
+            "preview": "./Pages/Public/img/pv/fefe7fef4d81b915b4cfe1cec024ca00cc39cc5a2190a726f064905fc8d9f918.jpg",
+            "src": "./Pages/Public/img/src/fefe7fef4d81b915b4cfe1cec024ca00cc39cc5a2190a726f064905fc8d9f918.png",
+            "describe": "R99 未成神禁止观看。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "懒",
+            "preview": "./Pages/Public/img/pv/eeabb554a85546e3d10683cd9de878bcb43c6d32c94c97afb2e64892b8191879.jpg",
+            "src": "./Pages/Public/img/src/eeabb554a85546e3d10683cd9de878bcb43c6d32c94c97afb2e64892b8191879.png",
+            "describe": "就是懒。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "呜",
+            "preview": "./Pages/Public/img/pv/eb1e34e894e9cb1738e4cc4967b6c5a7964b3e34b31a18db3865334ccc9266e1.jpg",
+            "src": "./Pages/Public/img/src/eb1e34e894e9cb1738e4cc4967b6c5a7964b3e34b31a18db3865334ccc9266e1.png",
+            "describe": "Gimgong 娘。派蒙表情包版本。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "沃玛？",
+            "preview": "./Pages/Public/img/pv/e92332d4e46c9b876a539d2cc65b31b4e6d8c49cb3c243a79cc95e8959a69933.jpg",
+            "src": "./Pages/Public/img/src/e92332d4e46c9b876a539d2cc65b31b4e6d8c49cb3c243a79cc95e8959a69933.png",
+            "describe": "Gimdong 娘。沃玛版本。特有灭火器、长颈鹿和蜘蛛。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "冲食堂",
+            "preview": "./Pages/Public/img/pv/e67c363818cb31e731b198cbcc66663c931be9b12698926c6cb63ccb98cd66c6.jpg",
+            "src": "./Pages/Public/img/src/e67c363818cb31e731b198cbcc66663c931be9b12698926c6cb63ccb98cd66c6.png",
+            "describe": "高中三大要务之一。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "万圣节海报",
+            "preview": "./Pages/Public/img/pv/c257ac252d0602566faa7c0b66f079f9d91f23b49a03d25a3de8b58b26da4f0d.jpg",
+            "src": "./Pages/Public/img/src/c257ac252d0602566faa7c0b66f079f9d91f23b49a03d25a3de8b58b26da4f0d.png",
+            "describe": "奇怪的东西集合到了一起。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "冲厕所",
+            "preview": "./Pages/Public/img/pv/a67c723898cb39e67193d8cbce66e63c931b0db16498926c6cb62ccb98cd6646.jpg",
+            "src": "./Pages/Public/img/src/a67c723898cb39e67193d8cbce66e63c931b0db16498926c6cb62ccb98cd6646.png",
+            "describe": "高中三大要务之一。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "屑",
+            "preview": "./Pages/Public/img/pv/cb6d341ee3e20c3698cd67872c329961c30e2cd999e16716667a99e62ccded98.jpg",
+            "src": "./Pages/Public/img/src/cb6d341ee3e20c3698cd67872c329961c30e2cd999e16716667a99e62ccded98.png",
+            "describe": "Gimdong 郎。描改表情。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "精神崩坏。",
+            "preview": "./Pages/Public/img/pv/87ebe7e59a959df06b602092f4d2ab608288a052eb996936a29f56ebd5164377.jpg",
+            "src": "./Pages/Public/img/src/87ebe7e59a959df06b602092f4d2ab608288a052eb996936a29f56ebd5164377.png",
+            "describe": "Happy thoughts。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "海报",
+            "preview": "./Pages/Public/img/pv/b468b5601d42dd427dad7ca922dba287be873a795a393cb29cf21dd2148c5d89.jpg",
+            "src": "./Pages/Public/img/src/b468b5601d42dd427dad7ca922dba287be873a795a393cb29cf21dd2148c5d89.png",
+            "describe": "仿制海报。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "首次建模",
+            "preview": "./Pages/Public/img/pv/c0093f295e07728669f60df79780c73e782bb0609a1f4bc33c78479e79e13c78.jpg",
+            "src": "./Pages/Public/img/src/c0093f295e07728669f60df79780c73e782bb0609a1f4bc33c78479e79e13c78.jpg",
+            "describe": "第一次建模渲染。地上是高中社团。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "材质球",
+            "preview": "./Pages/Public/img/pv/e50284f99af57b06a95814f967a7a1d61af04f0ac14d18e57c53f6f043a4ed1b.jpg",
+            "src": "./Pages/Public/img/src/e50284f99af57b06a95814f967a7a1d61af04f0ac14d18e57c53f6f043a4ed1b.jpg",
+            "describe": "单纯排布在一起就很好看的材质球。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "荧光管",
+            "preview": "./Pages/Public/img/pv/ebba37fe9455680145a842aa6abf3fd59555c00060021faa6af535559ffecaa8.jpg",
+            "src": "./Pages/Public/img/src/ebba37fe9455680145a842aa6abf3fd59555c00060021faa6af535559ffecaa8.jpg",
+            "describe": "仿制作品。彩虹色很好看。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "书院手机",
+            "preview": "./Pages/Public/img/pv/920a16ae2d2a7f5a74b6e56184d6c88d17de770c3f74e0118f3364338d676cc6.jpg",
+            "src": "./Pages/Public/img/src/920a16ae2d2a7f5a74b6e56184d6c88d17de770c3f74e0118f3364338d676cc6.jpg",
+            "describe": "为手机建模。然后随便贴个牌。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "航班",
+            "preview": "./Pages/Public/img/pv/907d88cab1252399fabeb49b41c9f20da4c479365e45b0f7cea696f15c2a7a41.jpg",
+            "src": "./Pages/Public/img/src/907d88cab1252399fabeb49b41c9f20da4c479365e45b0f7cea696f15c2a7a41.png",
+            "describe": "机场附近的航班。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "漫展",
+            "preview": "./Pages/Public/img/pv/c70fb52a0026f6524b4b2c27f3a2de5b656013075a9a5a00fed6b986da62ee7b.jpg",
+            "src": "./Pages/Public/img/src/c70fb52a0026f6524b4b2c27f3a2de5b656013075a9a5a00fed6b986da62ee7b.png",
+            "describe": "Cosplay 的小姐姐。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "直升机",
+            "preview": "./Pages/Public/img/pv/c3332b8d2cccf63333339ccccccc23333333cccccccc3333339bccccce643331.jpg",
+            "src": "./Pages/Public/img/src/c3332b8d2cccf63333339ccccccc23333333cccccccc3333339bccccce643331.png",
+            "describe": "直升机并不罕见。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "开放平台",
+            "preview": "./Pages/Public/img/pv/c1e39e162e10643d3e8d1f87ca36e1f43d812f89d87dc1e8c1e0b20f363f4d1e.jpg",
+            "src": "./Pages/Public/img/src/c1e39e162e10643d3e8d1f87ca36e1f43d812f89d87dc1e8c1e0b20f363f4d1e.png",
+            "describe": "似乎经过了颜色反相处理。有种诡异的感觉。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "表情包",
+            "preview": "./Pages/Public/img/pv/ac5bac2d64a492d619b2f139d2590ceee5c2e113b7b9d2cd84cbbda1c29290f3.jpg",
+            "src": "./Pages/Public/img/src/ac5bac2d64a492d619b2f139d2590ceee5c2e113b7b9d2cd84cbbda1c29290f3.png",
+            "describe": "《堕落高中生 Gimdong 娘》。《堕落天使加百璃》改图。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "给钱",
+            "preview": "./Pages/Public/img/pv/9858bbe57585e4181735f1f3032e0fd2e2e1a07ef682038bd272fe07f7c0e05a.jpg",
+            "src": "./Pages/Public/img/src/9858bbe57585e4181735f1f3032e0fd2e2e1a07ef682038bd272fe07f7c0e05a.png",
+            "describe": "《摇曳露营》剧照。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "蓝色幽灵",
+            "preview": "./Pages/Public/img/pv/c7f010a72e18ef073959226e6650ef5b38d4a56dd6553b9131e9025acf153d53.jpg",
+            "src": "./Pages/Public/img/src/c7f010a72e18ef073959226e6650ef5b38d4a56dd6553b9131e9025acf153d53.png",
+            "describe": "晨间阳光改色版。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "细胞",
+            "preview": "./Pages/Public/img/pv/9c07ce03614831dc9e37c7b161d8986647a375999a7ec70719b99c6c43f67193.jpg",
+            "src": "./Pages/Public/img/src/9c07ce03614831dc9e37c7b161d8986647a375999a7ec70719b99c6c43f67193.png",
+            "describe": "卡片计划。诞生便搁置的计划。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "细胞",
+            "preview": "./Pages/Public/img/pv/981ece456361319a9c56c675639e99ce2c716638978ed1c379f89c3c87a761c1.jpg",
+            "src": "./Pages/Public/img/src/981ece456361319a9c56c675639e99ce2c716638978ed1c379f89c3c87a761c1.png",
+            "describe": "卡片计划。诞生便搁置的计划。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "房间盒子",
+            "preview": "./Pages/Public/img/pv/c54fb1671e944eb279c94f4530ccb9326499b0e133cd478766b8669b3245fb0d.jpg",
+            "src": "./Pages/Public/img/src/c54fb1671e944eb279c94f4530ccb9326499b0e133cd478766b8669b3245fb0d.png",
+            "describe": "宿舍等比例建模。放进虚拟空间里。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "战争机器列车",
+            "preview": "./Pages/Public/img/pv/bffe620ecb40b5f98d9c1c02b03ba7b809ad560d5cc5eb277cae01e80f08ea57.jpg",
+            "src": "./Pages/Public/img/src/bffe620ecb40b5f98d9c1c02b03ba7b809ad560d5cc5eb277cae01e80f08ea57.png",
+            "describe": "战争机器列车。从轮胎上看，有公路列车和越野列车两种。从装备上看，有机动型、蓝色速射炮型和橙色重炮型三种。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "战争机器列车",
+            "preview": "./Pages/Public/img/pv/bfeec0169340b5799d9c34a6e5b22f9946ad0d9de8457a2741ee0368fa5852c6.jpg",
+            "src": "./Pages/Public/img/src/bfeec0169340b5799d9c34a6e5b22f9946ad0d9de8457a2741ee0368fa5852c6.png",
+            "describe": "战争机器列车。带有起重机的自卸车仅供短途使用。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "战争机器列车",
+            "preview": "./Pages/Public/img/pv/aa9ed1f085652e4ff0dab598421df86d0f5a90f07bb5a65399ac07bc0e41f10e.jpg",
+            "src": "./Pages/Public/img/src/aa9ed1f085652e4ff0dab598421df86d0f5a90f07bb5a65399ac07bc0e41f10e.png",
+            "describe": "战争机器列车。自卸车正在卸货。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "战争机器列车",
+            "preview": "./Pages/Public/img/pv/bfeec01e934025f79f98346ee5b30a9946e50d9de8445e2fc1e80b40fa5612f6.jpg",
+            "src": "./Pages/Public/img/src/bfeec01e934025f79f98346ee5b30a9946e50d9de8445e2fc1e80b40fa5612f6.png",
+            "describe": "战争机器列车。设计的白模阶段。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "宿舍一角",
+            "preview": "./Pages/Public/img/pv/c5ea43fe7a157a010fbebc06242eb76bbb09919d3eb4d2f24844c9ece910ccb8.jpg",
+            "src": "./Pages/Public/img/src/c5ea43fe7a157a010fbebc06242eb76bbb09919d3eb4d2f24844c9ece910ccb8.png",
+            "describe": "宿舍一角。用 Cinema 4D 渲染。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "十字教堂",
+            "preview": "./Pages/Public/img/pv/939d938ce6666c335931da649666ac3369383b6cb2c5c6b14e28bb4c339b649b.jpg",
+            "src": "./Pages/Public/img/src/939d938ce6666c335931da649666ac3369383b6cb2c5c6b14e28bb4c339b649b.png",
+            "describe": "模仿作品。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "坐在路灯上的少女",
+            "preview": "./Pages/Public/img/pv/99cc73b327336666ccccc998b333cd936493366ceccc499893668da466939999.jpg",
+            "src": "./Pages/Public/img/src/99cc73b327336666ccccc998b333cd936493366ceccc499893668da466939999.png",
+            "describe": "路灯的形状，感觉不太妙呢。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "过年头像",
+            "preview": "./Pages/Public/img/pv/face63e3e5c1b050a4df85de8f3e0e28ccb9cd786180ce42b0619ac78d99d23d.jpg",
+            "src": "./Pages/Public/img/src/face63e3e5c1b050a4df85de8f3e0e28ccb9cd786180ce42b0619ac78d99d23d.png",
+            "describe": "索要红包。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "耶",
+            "preview": "./Pages/Public/img/pv/bb0334f494eccb033992dc2cc66f71b2e78dc6d87366478698c91e4919a69b63.jpg",
+            "src": "./Pages/Public/img/src/bb0334f494eccb033992dc2cc66f71b2e78dc6d87366478698c91e4919a69b63.png",
+            "describe": "耶！",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "冲公交",
+            "preview": "./Pages/Public/img/pv/a67c363818cb31e731b398cbcc66e63c931b49b16498926c6db63ccb98cd66c6.jpg",
+            "src": "./Pages/Public/img/src/a67c363818cb31e731b398cbcc66e63c931b49b16498926c6db63ccb98cd66c6.png",
+            "describe": "高中三大要务之一。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "南瓜头像",
+            "preview": "./Pages/Public/img/pv/ba52e3a7c4690e582186984bc69971f59b07e692397a972d64f0da66338766dc.jpg",
+            "src": "./Pages/Public/img/src/ba52e3a7c4690e582186984bc69971f59b07e692397a972d64f0da66338766dc.png",
+            "describe": "万圣节专用。",
+            "tag": {
+                "design": 1,
+                "modeling": 0,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "书院手机",
+            "preview": "./Pages/Public/img/pv/83c2b0f03c3f5f0b3038cd0f9978c73cd27995cc99c532d76687309266976c7a.jpg",
+            "src": "./Pages/Public/img/src/83c2b0f03c3f5f0b3038cd0f9978c73cd27995cc99c532d76687309266976c7a.jpg",
+            "describe": "按现有手机建模。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "灯泡胶囊",
+            "preview": "./Pages/Public/img/pv/aae3f5e1f15298a442eb439469cfaf4e3f8756425a30391d29ec54f356c066c6.jpg",
+            "src": "./Pages/Public/img/src/aae3f5e1f15298a442eb439469cfaf4e3f8756425a30391d29ec54f356c066c6.png",
+            "describe": "不可食用哦。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "明日方舟",
+            "preview": "./Pages/Public/img/pv/92d5d4aa4d5233941fec72cf7c080f1900bf7636f3b14cf83a705b73aa538b41.jpg",
+            "src": "./Pages/Public/img/src/92d5d4aa4d5233941fec72cf7c080f1900bf7636f3b14cf83a705b73aa538b41.jpg",
+            "describe": "迷你小世界。",
+            "tag": {
+                "design": 1,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "宿舍一角",
+            "preview": "./Pages/Public/img/pv/c5fa47fa7b057b051faabc022c8ab56a3b0190193ef092f67844cbeef910ccb9.jpg",
+            "src": "./Pages/Public/img/src/c5fa47fa7b057b051faabc022c8ab56a3b0190193ef092f67844cbeef910ccb9.png",
+            "describe": "宿舍一角。使用 Blender 渲染。",
+            "tag": {
+                "design": 0,
+                "modeling": 1,
+                "photography": 0,
+                "coding": 0,
+            }
         }
     ]
