@@ -263,5 +263,113 @@ var projects =
                 "photography": 1,
                 "coding": 0,
             }
+        },
+        {
+            "title": "日出",
+            "preview": "./Pages/Public/img/pv/天空1.jpg",
+            "src": "./Pages/Public/img/src/天空1.jpg",
+            "describe": "窗外的日出。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "朝霞",
+            "preview": "./Pages/Public/img/pv/天空2.jpg",
+            "src": "./Pages/Public/img/src/天空2.jpg",
+            "describe": "窗外的朝霞。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "云海",
+            "preview": "./Pages/Public/img/pv/天空3.jpg",
+            "src": "./Pages/Public/img/src/天空3.jpg",
+            "describe": "窗外的云海。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "晚霞",
+            "preview": "./Pages/Public/img/pv/天空4.jpg",
+            "src": "./Pages/Public/img/src/天空4.jpg",
+            "describe": "窗外的晚霞",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "鸟",
+            "preview": "./Pages/Public/img/pv/天空5.jpg",
+            "src": "./Pages/Public/img/src/天空5.jpg",
+            "describe": "拍摄的时候总觉得画面里缺少点什么。然后飞进来一只鸟。其实这只鸟是合成的。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "M4 SOPMOD II",
+            "preview": "./Pages/Public/img/pv/狗子1.jpg",
+            "src": "./Pages/Public/img/src/狗子1.jpg",
+            "describe": "火鸟制造的狗子。有多个面部表情可以更换。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "M4 SOPMOD II",
+            "preview": "./Pages/Public/img/pv/狗子2.jpg",
+            "src": "./Pages/Public/img/src/狗子2.jpg",
+            "describe": "AR 小队的成员，平日里活跃好动，心理年龄较小，总是被 AR15 当做笨蛋看待，很多思路确实简单粗暴。但事实上，真正的战斗中会表现出狂热残忍并乐在其中的一面。对铁血人形会使用数之不尽的虐杀手段。但是对于同伴和指挥官非常亲近，作为我方成员是个可以信赖的优秀人形。（出自官方设定集《THE ART OF GIRLS'FRONTLINE UNTIL THE STARS》）",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "艾雅法拉",
+            "preview": "./Pages/Public/img/pv/小羊1.jpg",
+            "src": "./Pages/Public/img/src/小羊1.jpg",
+            "describe": "体表有源石结晶分布，参照医学检测报告，确认为感染者。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
+        },
+        {
+            "title": "艾雅法拉",
+            "preview": "./Pages/Public/img/pv/小羊2.jpg",
+            "src": "./Pages/Public/img/src/小羊2.jpg",
+            "describe": "艾雅法拉，火山学家，天灾信使。于高等源石技艺、高能量法术释放等领域展现出了卓越的天赋。现于罗德岛接受治疗，同时为罗德岛提供天灾研究、环境观察与评估、危险地形航行保障等相关服务。",
+            "tag": {
+                "design": 0,
+                "modeling": 0,
+                "photography": 1,
+                "coding": 0,
+            }
         }
     ]
