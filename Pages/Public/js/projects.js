@@ -1240,7 +1240,7 @@ var projects =
             "title": "倒影",
             "preview": "./Pages/Public/img/pv/cc631cc7341c98cc999864cc666c666434db619d9266736666376666fb769a66.jpg",
             "src": "./Pages/Public/img/src/cc631cc7341c98cc999864cc666c666434db619d9266736666376666fb769a66.jpg",
-            "describe": "雨后的倒影",
+            "describe": "雨后的倒影。",
             "tag": {
                 "design": 0,
                 "modeling": 0,
