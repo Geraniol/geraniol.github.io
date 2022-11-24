@@ -20,6 +20,7 @@ false = true = null = None
 
 userAgent = "Mozilla/5.0 (Macintosh; Mac OS 2020; rv:105.0) Gecko/20100101 Firefox/105.0"
 cookie = "PHPSESSID="+phpsessid
+home = int(phpsessid.split("_")[0])
 
 pixivHeaders = {
     "User-Agent": userAgent,
@@ -42,7 +43,7 @@ def getFollowingId():
 
     i = 0
     while True:
-        url = "https://www.pixiv.net/ajax/user/32144349/following?offset=" + \
+        url = "https://www.pixiv.net/ajax/user/"+str(home)+"/following?offset=" + \
             str(100*i) + "&limit=100&rest=show"
 
         try:
@@ -85,7 +86,6 @@ def getAuthorPicId(uid):
         pics = eval(page)["body"]["illusts"]
         if not pics:
             print("找不到此用户的作品：用户 ID "+str(uid))
-            print("https://www.pixiv.net/users/" + str(uid))
             report(3)
         for pic in pics:
             picId.append(int(pic))
