@@ -127,11 +127,11 @@ print("\033c", end="")
 # 获取所有关注者 UID
 print(getFollowingId())
 
-# getFollowingId( integer-UID ) -> list-PIDs: list of integers
+# getAuthorPicId( integer-UID ) -> list-PIDs: list of integers
 # 输入作者 UID 获取作者所有作品 PID
 print(getAuthorPicId(212801))
 
-# getFollowingId( integer-PID ) -> list-URLs: list of strings
+# getAllPicUrl( integer-PID ) -> list-URLs: list of strings
 # 输入作品 PID 获取作品所有图片 URL
 print(getAllPicUrl(78551403))
 
