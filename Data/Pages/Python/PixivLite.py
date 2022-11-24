@@ -37,7 +37,7 @@ def report(code=0):
     input("按下回车以继续")
 
 
-def getFollowingId():
+def getFollowingId(home):
 
     userId = []
 
@@ -124,9 +124,9 @@ def getAllPicUrl(pid):
 
 print("\033c", end="")
 
-# getFollowingId( None ) -> list-UIDs: list of integers
-# 获取所有关注者 UID
-print(getFollowingId())
+# getFollowingId( integer-Home ) -> list-UIDs: list of integers
+# 输入用户 ID 获取所有关注者 UID
+print(getFollowingId(home))
 
 # getAuthorPicId( integer-UID ) -> list-PIDs: list of integers
 # 输入作者 UID 获取作者所有作品 PID
