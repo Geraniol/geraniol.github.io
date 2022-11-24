@@ -85,6 +85,7 @@ def getAuthorPicId(uid):
         pics = eval(page)["body"]["illusts"]
         if not pics:
             print("找不到此用户的作品：用户 ID "+str(uid))
+            print("https://www.pixiv.net/users/" + str(uid))
             report(3)
         for pic in pics:
             picId.append(int(pic))
