@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Telebot getUpdates</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="getUpdates+">
+    <link rel="apple-touch-icon" href="./2.png">
+</head>
+
+<body>
+    <style>
+        .block {
+            margin: 5px;
+            border: 1px solid #121212;
+            padding: 15px;
+            border-radius: 10px;
+
+            word-wrap: break-all;
+            word-break: break-word;
+        }
+    </style>
+    <div id="root">
+        <input id="botToken" value="" htmlescape="false" placeholder="botToken">
+        <input type="button" value="continue" onclick="getUpdates()">
+    </div>
+    <script>
+        function login() {
+            document.getElementById("root").innerHTML = '<input id="botToken" value="" htmlescape="false" placeholder="botToken">\n<input type="button" value="continue" onclick="getUpdates()">';
+            load();
+        }
+        function randomColor() {
+            return Math.floor(Math.random() * 0xffffff).toString(16);
+        }
+        function getUpdates() {
+            var botToken = document.getElementById("botToken").value;
+            localStorage.setItem("botToken", botToken);
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("POST", "https://api.telegram.org/bot" + botToken + "/getUpdates", false);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("offset=-50");
+            json = JSON.parse(xmlhttp.responseText);
+            document.getElementById("root").innerHTML = "<div class='block' onclick='login()'>Return: " + JSON.stringify(json["ok"]) + ".&nbsp;Tap here to login.</div>";
+            for (var i = json["result"].length - 1; i > -1; i--) {
+                var item = "";
+                try { item += JSON.stringify(json["result"][i]["channel_post"]["caption"]); } catch { }
+                try { item += JSON.stringify(json["result"][i]["channel_post"]["text"]); } catch { }
+                try { item += JSON.stringify(json["result"][i]["message"]["caption"]); } catch { }
+                try { item += JSON.stringify(json["result"][i]["message"]["text"]); } catch { }
+                document.getElementById("root").innerHTML += "<div class='block' style='background:#" + randomColor() + "88'>" + item.replace("undefined", "") + "</div>";
+            }
+        }
+        function load() {
+            botToken = localStorage.getItem("botToken");
+            if (botToken) {
+                document.getElementById("botToken").value = botToken;
+            }
+        }
+        window.onload = () => { load(); getUpdates(); }
+    </script>
+</body>
+
+</html>
