@@ -35,7 +35,7 @@
             xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xmlhttp.send("offset=-30");
             json = JSON.parse(xmlhttp.responseText);
-            document.getElementById("root").innerHTML = "<div class='block'>" + JSON.stringify(["ok"]) + "</div>";
+            document.getElementById("root").innerHTML = "<div class='block'>" + JSON.stringify(json["ok"]) + "</div>";
             for (var i = 0; i < json["result"].length; i++) {
                 var item = JSON.stringify(json["result"][i]);
                 document.getElementById("root").innerHTML += "<div class='block' style='background:#" + randomColor() + "88'>" + item + "</div>";
