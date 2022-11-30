@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Telebot getUpdates</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+</head>
+
+<body>
+    <style>
+        .block {
+            margin: 5px;
+            border: 1px solid #121212;
+            padding: 15px;
+            border-radius: 10px;
+
+            word-wrap: break-all;
+            word-break: break-word;
+        }
+    </style>
+    <div id="root">
+        <input id="botToken" value="" htmlescape="false" placeholder="botToken">
+        <input type="button" value="continue" onclick="getUpdates()">
+    </div>
+    <script>
+        function randomColor() {
+            return Math.floor(Math.random() * 0xffffff).toString(16);
+        }
+        function getUpdates() {
+            var botToken = document.getElementById("botToken").value;
+            localStorage.setItem("botToken", botToken);
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("POST", "https://api.telegram.org/bot" + botToken + "/getUpdates", false);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("offset=-30");
+            json = JSON.parse(xmlhttp.responseText);
+            document.getElementById("root").innerHTML = "<div class='block'>" + JSON.stringify(["ok"]) + "</div>";
+            for (var i = 0; i < json["result"].length; i++) {
+                var item = JSON.stringify(json["result"][i]);
+                document.getElementById("root").innerHTML += "<div class='block' style='background:#" + randomColor() + "88'>" + item + "</div>";
+            }
+        }
+        function load() {
+            botToken = localStorage.getItem("botToken");
+            if (botToken) {
+                document.getElementById("botToken").value = botToken;
+            }
+        }
+        window.onload = load();
+    </script>
+</body>
+
+</html>
