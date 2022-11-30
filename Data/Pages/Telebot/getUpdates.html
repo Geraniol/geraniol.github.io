@@ -36,7 +36,7 @@
             xmlhttp.send("offset=-30");
             json = JSON.parse(xmlhttp.responseText);
             document.getElementById("root").innerHTML = "<div class='block'>" + JSON.stringify(json["ok"]) + "</div>";
-            for (var i = json["result"].length; i > 0; i--) {
+            for (var i = json["result"].length - 1; i > -1; i--) {
                 var item = JSON.stringify(json["result"][i]);
                 document.getElementById("root").innerHTML += "<div class='block' style='background:#" + randomColor() + "88'>" + item + "</div>";
             }
