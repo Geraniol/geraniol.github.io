@@ -24,6 +24,10 @@
         <input type="button" value="continue" onclick="getUpdates()">
     </div>
     <script>
+        function login() {
+            document.getElementById("root").innerHTML = '<input id="botToken" value="" htmlescape="false" placeholder="botToken">\n<input type="button" value="continue" onclick="getUpdates()">';
+            load();
+        }
         function randomColor() {
             return Math.floor(Math.random() * 0xffffff).toString(16);
         }
@@ -35,7 +39,7 @@
             xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xmlhttp.send("offset=-30");
             json = JSON.parse(xmlhttp.responseText);
-            document.getElementById("root").innerHTML = "<div class='block'>" + JSON.stringify(json["ok"]) + "</div>";
+            document.getElementById("root").innerHTML = "<div class='block' onclick='login()'>Return: " + JSON.stringify(json["ok"]) + ".&nbsp;Tap here to login.</div>";
             for (var i = json["result"].length - 1; i > -1; i--) {
                 var item = JSON.stringify(json["result"][i]);
                 document.getElementById("root").innerHTML += "<div class='block' style='background:#" + randomColor() + "88'>" + item + "</div>";
@@ -47,7 +51,7 @@
                 document.getElementById("botToken").value = botToken;
             }
         }
-        window.onload = load();
+        window.onload = () => { load(); getUpdates(); }
     </script>
 </body>
 
