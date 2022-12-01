@@ -27,7 +27,7 @@ function messageToHtml(message) {
     try { result += "<br> 文件：" + getContent(message, ["document", "mime_type"]) } catch { }
     try { result += "<br> 贴纸：" + getContent(message, ["sticker", "emoji"]) } catch { }
     try { result += "<br> 投票：" + getContent(message, ["poll", "question"]) } catch { }
-    try { result += "<br> 名片：" + getContent(message, ["contact", "first_name"]) + "@" + getContent(message, ["contact", "phone_number"]) } catch { }
+    try { result += "<br> 名片：" + getContent(message, ["contact", "first_name"]) + " @ " + getContent(message, ["contact", "phone_number"]) } catch { }
     try { result += "<br> 回复：" + { true: "Yes." }[typeof getContent(message, ["reply_to_message"]) == "object"] } catch { }
 
     return result;

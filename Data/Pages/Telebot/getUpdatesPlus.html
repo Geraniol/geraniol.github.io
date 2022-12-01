@@ -13,34 +13,59 @@
 
 <body>
     <style>
-        .block {
-            margin: 5px;
-            border: 1px solid #121212;
-            padding: 15px;
-            border-radius: 10px;
+        *::-webkit-scrollbar {
+            display: none;
+        }
 
+        * {
+            -webkit-tap-highlight-color: transparent;
+            font-size: 16px;
+            appearance: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            background: #242424;
+        }
+
+        .block {
+            margin: 10px;
+            /* border: 1px solid #121212; */
+            padding: 15px;
+            border-radius: 15px;
+            background: #dddddd;
             word-wrap: break-all;
             word-break: break-word;
         }
+
+        #botToken {
+            min-width: 70%;
+        }
+
+        #btn {
+            min-width: 15%;
+        }
     </style>
     <div id="root">
-        <input id="botToken" value="" htmlescape="false" placeholder="botToken">
-        <input type="button" value="connect" onclick="getUpdates()">
+        <input class="block" id="botToken" value="" htmlescape="false" placeholder="botToken">
+        <input class="block" id="btn" type="button" value="登陆" onclick="getUpdates()">
     </div>
     <script>
         function login() {
-            document.getElementById("root").innerHTML = '<input id="botToken" value="" htmlescape="false" placeholder="botToken">\n<input type="button" value="continue" onclick="getUpdates()">';
+            document.getElementById("root").innerHTML = '<input class="block" id="botToken" value="" htmlescape="false" placeholder="botToken">\n<input class="block" id="btn" type="button" value="登陆" onclick="getUpdates()">';
             load();
         }
         function randomColor() {
             return Math.floor(Math.random() * 0xffffff).toString(16);
         }
 
-
     </script>
     <script src="./func.js"></script>
     <script>
-
 
         function getUpdates() {
             var botToken = document.getElementById("botToken").value;
@@ -50,11 +75,14 @@
             xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xmlhttp.send("offset=-50");
             json = JSON.parse(xmlhttp.responseText);
-            document.getElementById("root").innerHTML = "<div class='block' onclick='login()'>Return: " + JSON.stringify(json["ok"]) + ".&nbsp;Tap here to login.</div>";
+            document.getElementById("root").innerHTML = "<div class='block' onclick='login()'>" + {
+                true: "机器人已登陆，点此重新登陆。",
+                false: "机器人未登陆，点此登陆。"
+            }[JSON.stringify(json["ok"])] + "</div>";
             for (var i = json["result"].length - 1; i > -1; i--) {
                 var item = messageParser(json["result"][i]);
 
-                document.getElementById("root").innerHTML += "<div class='block' style='background:#" + randomColor() + "88'>" + item + "</div>";
+                document.getElementById("root").innerHTML += "<div class='block'>" + item + "</div>";
             }
         }
         function load() {
