@@ -35,6 +35,29 @@
         function randomColor() {
             return Math.floor(Math.random() * 0xffffff).toString(16);
         }
+
+
+        function messageParser(message) {
+            var result = "";
+            const types = ["animation", "audio", "document", "photo", "sticker", "video", "video_note", "voice", "contact", "dice", "game", "poll", "pinned_message"];
+            const trans = { "animation": "动画", "audio": "音频", "document": "文件", "photo": "图片", "sticker": "贴纸", "video": "视频", "voice": "语音", "contact": "名片", "game": "游戏", "poll": "投票", "pinned_message": "置顶一条消息" };
+            const msgType = ["channel_post", "message"];
+            for (var n = 0; n < msgType.length; n++) {
+                if (msgType[n] in message) {
+                    if ("text" in message[msgType[n]]) result += message[msgType[n]]["text"];
+                    else if ("caption" in message[msgType[n]]) result += message[msgType[n]]["caption"];
+                    else result += "--";
+                    for (var i = 0; i < types.length; i++) {
+                        if (types[i] in message[msgType[n]]) {
+                            result += "<br>附加：" + trans[types[i]];
+                        }
+                    }
+                }
+            }
+            return result;
+        }
+
+
         function getUpdates() {
             var botToken = document.getElementById("botToken").value;
             localStorage.setItem("botToken", botToken);
@@ -45,12 +68,16 @@
             json = JSON.parse(xmlhttp.responseText);
             document.getElementById("root").innerHTML = "<div class='block' onclick='login()'>Return: " + JSON.stringify(json["ok"]) + ".&nbsp;Tap here to login.</div>";
             for (var i = json["result"].length - 1; i > -1; i--) {
-                var item = "";
-                try { item += JSON.stringify(json["result"][i]["channel_post"]["caption"]); } catch { }
-                try { item += JSON.stringify(json["result"][i]["channel_post"]["text"]); } catch { }
-                try { item += JSON.stringify(json["result"][i]["message"]["caption"]); } catch { }
-                try { item += JSON.stringify(json["result"][i]["message"]["text"]); } catch { }
-                document.getElementById("root").innerHTML += "<div class='block' style='background:#" + randomColor() + "88'>" + item.replace("undefined", "") + "</div>";
+                var item = messageParser(json["result"][i]);
+
+                // var item = "";
+                // try { item += JSON.stringify(json["result"][i]["channel_post"]["caption"]); } catch { }
+                // try { item += JSON.stringify(json["result"][i]["channel_post"]["text"]); } catch { }
+                // try { item += JSON.stringify(json["result"][i]["channel_post"]["sticker"]["emoji"]); } catch { }
+                // try { item += JSON.stringify(json["result"][i]["message"]["caption"]); } catch { }
+                // try { item += JSON.stringify(json["result"][i]["message"]["text"]); } catch { }
+                // try { item += JSON.stringify(json["result"][i]["message"]["sticker"]["emoji"]); } catch { }
+                document.getElementById("root").innerHTML += "<div class='block' style='background:#" + randomColor() + "88'>" + item + "</div>";
             }
         }
         function load() {
