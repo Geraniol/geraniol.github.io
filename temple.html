@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="zh-CN">
 
 <head>
+    <title></title>
+
     <meta charset="UTF-8">
-    <link href="../Public/icon/Logo.svg" rel="icon" type="image/x-icon">
-    <title>Null</title>
+    <!-- <meta http-equiv="refresh" content="0;url=https://"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- <meta name="apple-mobile-web-app-title" content=""> -->
+    <!-- <meta name="application-name" content=""> -->
+    <!-- <meta name="description" content=""> -->
+    <!-- <meta name="author" content=""> -->
+    <meta name="robots" content="none">
+
+    <!-- <link rel="icon" href="" type="image/x-icon"> -->
+    <!-- <link rel="stylesheet" href=".css"> -->
+    <!-- <link rel="apple-touch-icon" href=""> -->
+    <!-- <link rel="manifest" href=".json"> -->
+    <!-- <link rel="apple-touch-startup-image" href=""> -->
+
+    <!-- <script src=".js"></script> -->
 </head>
 
-<style>
-    *::-webkit-scrollbar {
-        display: none;
-    }
-
-    * {
-        scrollbar-width: none;
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        margin: 0;
-        border: 0;
-        padding: 0;
-    }
-</style>
-
 <body>
-    <!-- body -->
-</body>
+    <style>
+        *::-webkit-scrollbar {
+            display: none;
+        }
 
-<script>
-    // script
-</script>
+        * {
+            box-sizing: border-box;
+            overflow: hidden;
+            appearance: none;
+            z-index: 0;
+
+            width: 100%;
+            height: 100%;
+
+            margin: 0;
+            border: 0;
+            padding: 0;
+
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+
+            object-fit: cover;
+            -o-object-fit: cover;
+
+            transition: 0.2s;
+            -o-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -webkit-transition: 0.2s;
+
+            text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+
+    <div id="root"></div>
+
+    <script type="text/javascript">
+        function antiIframe() { if (top != self) top.location = self.location; }
+        window.onload = antiIframe();
+    </script>
+</body>
 
 </html>
