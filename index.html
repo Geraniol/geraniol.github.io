@@ -3,9 +3,26 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <link href="./Page/Public/icon/Logo.svg" rel="icon" type="image/x-icon">
     <title>Portfolio 作品集</title>
+
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="0;url=https://"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Portfolio">
+    <meta name="application-name" content="Portfolio">
+    <meta name="description" content="Collections of Geraniol / 香叶醇的作品集">
+    <meta name="author" content="Geraniol">
+    <meta name="robots" content="none">
+
+    <link rel="apple-touch-startup-image" href="./Page/Public/icon/Logo.svg">
+    <link rel="apple-touch-icon" href="./Page/Public/icon/Logo.svg">
+    <link href="./Page/Public/icon/Logo.svg" rel="icon" type="image/x-icon">
+    <!-- <link rel="stylesheet" href=".css"> -->
+    <!-- <link rel="manifest" href=".json"> -->
+
+    <!-- <script src=".js"></script> -->
 </head>
 
 <style>
@@ -281,6 +298,8 @@
 
 <script type="text/javascript" src="./Page/Public/js/projects.js"></script>
 <script>
+
+    if (top != self) top.location = self.location;
 
     projects.sort(function () { return (0.5 - Math.random()); });
 
