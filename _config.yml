@@ -1,2 +1,2 @@
 theme: jekyll-theme-cayman
-include: [.]
+keep_files: [".js", ".css", ".png", ".jpg", ".jpeg", ".gif", ".svg"]
