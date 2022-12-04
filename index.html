@@ -46,7 +46,7 @@
     }
 
     html {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: normal;
     }
 
@@ -69,6 +69,7 @@
         object-fit: cover;
         -o-object-fit: cover;
         z-index: -1;
+        background-color: rgba(30, 30, 30, 0.5);
         background-image: repeating-linear-gradient(135deg, rgba(30, 30, 30, 1) 0, rgba(30, 30, 30, 1) 1%, rgba(50, 50, 50, 1) 1%, rgba(50, 50, 50, 1) 2%);
         /* animation-name: bgAnime;
         animation-duration: 5s;
@@ -208,31 +209,34 @@
         text-align: justify;
     }
 
+    #modeswitch {
+        transform: scale(0.8);
+    }
+
+    .card {
+        border-radius: 30px;
+    }
+
+    .preview {
+        border-radius: 30px 30px 0 0;
+    }
+
     /* Mobile */
     @media (max-aspect-ratio: 7 / 10) {
-        #modeswitch {
-            transform: scale(1);
-        }
 
         .card {
             width: 100%;
             margin-top: 15px;
             margin-bottom: 15px;
-            border-radius: 50px;
         }
 
         .preview {
             width: 100%;
-            border-radius: 50px 50px 0 0;
         }
     }
 
     /* Wide */
     @media (min-aspect-ratio: 7 / 10) {
-        #modeswitch {
-            transform: scale(0.8);
-        }
-
         #bg:active {
             object-fit: contain;
             -o-object-fit: contain;
@@ -246,7 +250,6 @@
         .card {
             width: 400px;
             margin: 15px;
-            border-radius: 30px;
         }
 
         .preview {
@@ -254,7 +257,6 @@
             height: 400px;
             object-fit: cover;
             -o-object-fit: cover;
-            border-radius: 30px 30px 0 0;
         }
 
         .describe {
@@ -313,7 +315,7 @@
     }
 
     function addCard() {
-        for (var i = 0; i < projects.length; i++) {
+        for (var i = 0; i < Math.min(projects.length, 30); i++) {
             document.getElementById("container").innerHTML += '<div class="card" mode="light" title="' + projects[i]["title"] + '\n' + projects[i]["describe"] + '" onclick="javascrtpt:window.location.href=\'' + projects[i]["src"] + '\'"><img src="' + projects[i]["preview"] + '" class="preview" mode="light" loading="lazy"><div id="latest" class="tags"></div><div class="text"><div class="title" mode="light">' + projects[i]["title"] + '</div><div class="describe" mode="light">' + projects[i]["describe"] + '</div></div></div>';
             if (projects[i]["tag"]["design"]) document.getElementById("latest").innerHTML += '<div id="design" class="tag" mode="light"> 设计</div>';
             if (projects[i]["tag"]["modeling"]) document.getElementById("latest").innerHTML += '<div id="modeling" class="tag" mode="light">建模</div>';
