@@ -302,6 +302,8 @@
 
     projects.sort(function () { return (0.5 - Math.random()); });
 
+    if ((screen.width / screen.height) > (7 / 10)) var max = 120; else var max = 30;
+
     function switchMode() {
         var elements = document.all;
         for (var i = 0; i < elements.length; i++) {
@@ -312,7 +314,7 @@
     }
 
     function addCard() {
-        for (var i = 0; i < Math.min(projects.length, 30); i++) {
+        for (var i = 0; i < Math.min(projects.length, max); i++) {
             document.getElementById("container").innerHTML += '<div class="card" mode="light" title="' + projects[i]["title"] + '\n' + projects[i]["describe"] + '" onclick="javascrtpt:window.location.href=\'' + projects[i]["src"] + '\'"><img src="' + projects[i]["preview"] + '" class="preview" mode="light" loading="lazy"><div id="latest" class="tags"></div><div class="text"><div class="title" mode="light">' + projects[i]["title"] + '</div><div class="describe" mode="light">' + projects[i]["describe"] + '</div></div></div>';
             if (projects[i]["tag"]["design"]) document.getElementById("latest").innerHTML += '<div id="design" class="tag" mode="light"> 设计</div>';
             if (projects[i]["tag"]["modeling"]) document.getElementById("latest").innerHTML += '<div id="modeling" class="tag" mode="light">建模</div>';
