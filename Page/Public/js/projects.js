@@ -1393,30 +1393,6 @@ var projects =
             }
         },
         {
-            "title": "狐狸",
-            "preview": "./Page/Public/img/pv/99cc67b3673398cc2c31986c24b239b99c6c9365e59b6793994c8e649b31669b.jpg",
-            "src": "./Page/Public/img/src/99cc67b3673398cc2c31986c24b239b99c6c9365e59b6793994c8e649b31669b.png",
-            "describe": "“觅雪冰城”活动表情包。仅在内部展示，没有进入量产。",
-            "tag": {
-                "design": 1,
-                "modeling": 0,
-                "photography": 0,
-                "coding": 0,
-            }
-        },
-        {
-            "title": "新年小狮子",
-            "preview": "./Page/Public/img/pv/857860dc7a966e1dd80b9da3ad70a3f0f289d2f5a37c9cc29d822508bd2fd82d.jpg",
-            "src": "./Page/Public/img/src/857860dc7a966e1dd80b9da3ad70a3f0f289d2f5a37c9cc29d822508bd2fd82d.png",
-            "describe": "小狮子表情包新年特供版本。",
-            "tag": {
-                "design": 1,
-                "modeling": 0,
-                "photography": 0,
-                "coding": 0,
-            }
-        },
-        {
             "title": "元旦海报",
             "preview": "./Page/Public/img/pv/9b39b1b26ce66649b33999b6999666c9e6499936999c64c966669b2699992919.jpg",
             "src": "./Page/Public/img/src/9b39b1b26ce66649b33999b6999666c9e6499936999c64c966669b2699992919.png",
@@ -1457,18 +1433,6 @@ var projects =
             "preview": "./Page/Public/img/pv/f1005eaaf8001eaafa041faa5e95e7c016f5e3d01cfde2d41c7fe286145fe20f.jpg",
             "src": "./Page/Public/img/src/f1005eaaf8001eaafa041faa5e95e7c016f5e3d01cfde2d41c7fe286145fe20f.jpg",
             "describe": "日环食。",
-            "tag": {
-                "design": 1,
-                "modeling": 0,
-                "photography": 0,
-                "coding": 0,
-            }
-        },
-        {
-            "title": "书院小狮子",
-            "preview": "./Page/Public/img/pv/ff7a99f0a0d5575f800b98a3757d715380835a7f86d588f796402740962f678a.jpg",
-            "src": "./Page/Public/img/src/ff7a99f0a0d5575f800b98a3757d715380835a7f86d588f796402740962f678a.png",
-            "describe": "书院小狮子表情包首个表情。",
             "tag": {
                 "design": 1,
                 "modeling": 0,
@@ -1988,18 +1952,6 @@ var projects =
             "tag": {
                 "design": 0,
                 "modeling": 1,
-                "photography": 0,
-                "coding": 0,
-            }
-        },
-        {
-            "title": "今日份のChicken 图标",
-            "preview": "./Page/Public/img/pv/ef146c91b06b934c93a64da1cf1a32941c6bc86939be3324eefb8c9a3bae6660.jpg",
-            "src": "./Page/Public/img/src/ef146c91b06b934c93a64da1cf1a32941c6bc86939be3324eefb8c9a3bae6660.png",
-            "describe": "“今日份のChicken”图标。灵感来源于小学同学所画“锦鸡”。",
-            "tag": {
-                "design": 1,
-                "modeling": 0,
                 "photography": 0,
                 "coding": 0,
             }
@@ -2833,34 +2785,10 @@ var projects =
             }
         },
         {
-            "title": "冲食堂",
-            "preview": "./Page/Public/img/pv/e67c363818cb31e731b198cbcc66663c931be9b12698926c6cb63ccb98cd66c6.jpg",
-            "src": "./Page/Public/img/src/e67c363818cb31e731b198cbcc66663c931be9b12698926c6cb63ccb98cd66c6.png",
-            "describe": "高中三大要务之一。",
-            "tag": {
-                "design": 1,
-                "modeling": 0,
-                "photography": 0,
-                "coding": 0,
-            }
-        },
-        {
             "title": "万圣节海报",
             "preview": "./Page/Public/img/pv/c257ac252d0602566faa7c0b66f079f9d91f23b49a03d25a3de8b58b26da4f0d.jpg",
             "src": "./Page/Public/img/src/c257ac252d0602566faa7c0b66f079f9d91f23b49a03d25a3de8b58b26da4f0d.png",
             "describe": "奇怪的东西集合到了一起。",
-            "tag": {
-                "design": 1,
-                "modeling": 0,
-                "photography": 0,
-                "coding": 0,
-            }
-        },
-        {
-            "title": "冲厕所",
-            "preview": "./Page/Public/img/pv/a67c723898cb39e67193d8cbce66e63c931b0db16498926c6cb62ccb98cd6646.jpg",
-            "src": "./Page/Public/img/src/a67c723898cb39e67193d8cbce66e63c931b0db16498926c6cb62ccb98cd6646.png",
-            "describe": "高中三大要务之一。",
             "tag": {
                 "design": 1,
                 "modeling": 0,
@@ -3173,18 +3101,6 @@ var projects =
             "preview": "./Page/Public/img/pv/bb0334f494eccb033992dc2cc66f71b2e78dc6d87366478698c91e4919a69b63.jpg",
             "src": "./Page/Public/img/src/bb0334f494eccb033992dc2cc66f71b2e78dc6d87366478698c91e4919a69b63.png",
             "describe": "耶！",
-            "tag": {
-                "design": 1,
-                "modeling": 0,
-                "photography": 0,
-                "coding": 0,
-            }
-        },
-        {
-            "title": "冲公交",
-            "preview": "./Page/Public/img/pv/a67c363818cb31e731b398cbcc66e63c931b49b16498926c6db63ccb98cd66c6.jpg",
-            "src": "./Page/Public/img/src/a67c363818cb31e731b398cbcc66e63c931b49b16498926c6db63ccb98cd66c6.png",
-            "describe": "高中三大要务之一。",
             "tag": {
                 "design": 1,
                 "modeling": 0,
