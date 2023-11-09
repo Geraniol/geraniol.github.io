@@ -1,3 +1,17 @@
+# HomePage Repo <br /> 主页仓库  
+
+## **主要功能**  
+- 主页仓库  
+- 项目导航  
+
+## **未来方向**
+- 将按项目划分存储库
+- 本存储库仅存放主页、导航及其生成脚本
+
+<br /><br /><br />
+
+# 以下为原文档说明
+
 # <img src="./Page/Public/icon/Logo.svg" width="20em"> **档案手册**  
 
 ## **来源与方向**  
@@ -49,5 +63,5 @@
 ## **其他**  
 - **[项目主页](https://geraniol.github.io/index.html)**~~（维护中）~~（基本框架完成）  
 - **[项目索引页](https://geraniol.github.io/index_ex.html)**  
-- **[赞助：Steam 愿望单](https://store.steampowered.com/wishlist/profiles/76561199089877858/)**  
-- **[电报讨论组（NSFW）](https://t.me/+94Cepvt2pbswNWJl)**  
+- ~~[赞助：Steam 愿望单]()~~  
+- ~~[电报讨论组（NSFW）]()~~  
