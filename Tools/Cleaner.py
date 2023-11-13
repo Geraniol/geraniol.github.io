@@ -48,14 +48,20 @@ def cleaner(path=".") -> None:
         for dn in dns:
             if _match_dir(dn):
                 dp = os.path.join(cp, dn)
-                print('Removed dir:', dp)
-                shutil.rmtree(dp)
+                try:
+                    shutil.rmtree(dp)
+                    print('Removed dir:', dp)
+                except:
+                    print('Failed to remove dir:', dp)
 
         for fn in fns:
             if _match_file(fn):
                 fp = os.path.join(cp, fn)
-                print('Removed file:', fp)
-                os.remove(fp)
+                try:
+                    os.remove(fp)
+                    print('Removed file:', fp)
+                except:
+                    print('Failed to remove file:', fp)
 
 
 def clean_empty_files(path=".") -> None:
@@ -65,8 +71,11 @@ def clean_empty_files(path=".") -> None:
         for fn in fns:
             fp = os.path.join(cp, fn)
             if not os.path.getsize(fp):
-                print('Removed empty file:', fp)
-                os.remove(fp)
+                try:
+                    os.remove(fp)
+                    print('Removed empty file:', fp)
+                except:
+                    print('Failed to remove empty file:', fp)
 
 
 def clean_empty_dirs(path=".") -> None:
@@ -76,9 +85,12 @@ def clean_empty_dirs(path=".") -> None:
         flag = False
         for cp, dns, fns in os.walk(path, topdown=False):
             if not dns and not fns:
-                print('Removed empty dir:', cp)
-                os.rmdir(cp)
-                flag = True
+                try:
+                    os.rmdir(cp)
+                    print('Removed empty dir:', cp)
+                    flag = True
+                except:
+                    print('Failed to remove empty dir:', cp)
 
 
 if __name__ == "__main__":
