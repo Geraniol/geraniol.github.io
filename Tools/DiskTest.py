@@ -18,7 +18,7 @@ def disk_test() -> None:
                 f.seek(10**9-1)
                 f.write(b'\x00')
                 i += 1
-                print(f'\rTotal: {s+i} GB    Speed: {i/(time.time()-t):0>8.6f} GB/s', end='', flush=True)
+                print(f'\rTotal: {s+i} GB    Speed: {i/(time.time()-t):0>10.6f} GB/s', end='', flush=True)
         except:
             break
 
