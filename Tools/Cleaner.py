@@ -1,5 +1,6 @@
 import os
 import shutil
+import sys
 
 
 def _match_file(filename) -> bool:
@@ -40,9 +41,9 @@ def _match_dir(dirname) -> bool:
     return (dirname in pattern_names) or (dirname.startswith(tuple(pattern_starts))) or (dirname.endswith(tuple(pattern_ends)))
 
 
-def cleaner() -> None:
+def cleaner(path=".") -> None:
 
-    for cp, dns, fns in os.walk(".", topdown=False):
+    for cp, dns, fns in os.walk(path, topdown=False):
 
         for dn in dns:
             if _match_dir(dn):
@@ -57,9 +58,9 @@ def cleaner() -> None:
                 os.remove(fp)
 
 
-def clean_empty_files() -> None:
+def clean_empty_files(path=".") -> None:
 
-    for cp, dns, fns in os.walk(".", topdown=False):
+    for cp, dns, fns in os.walk(path, topdown=False):
 
         for fn in fns:
             fp = os.path.join(cp, fn)
@@ -68,12 +69,12 @@ def clean_empty_files() -> None:
                 os.remove(fp)
 
 
-def clean_empty_dirs() -> None:
+def clean_empty_dirs(path=".") -> None:
 
     flag = True
     while flag:
         flag = False
-        for cp, dns, fns in os.walk(".", topdown=False):
+        for cp, dns, fns in os.walk(path, topdown=False):
             if not dns and not fns:
                 print('Removed empty dir:', cp)
                 os.rmdir(cp)
@@ -81,6 +82,12 @@ def clean_empty_dirs() -> None:
 
 
 if __name__ == "__main__":
-    cleaner()
-    # clean_empty_files()
-    # clean_empty_dirs()
+
+    if len(sys.argv) > 1:
+        path = sys.argv[1]
+    else:
+        path = "."
+
+    cleaner(path)
+    # clean_empty_files(path)
+    # clean_empty_dirs(path)
