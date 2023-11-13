@@ -24,6 +24,7 @@ def _match_file(filename) -> bool:
 def _match_dir(dirname) -> bool:
 
     pattern_names = (
+        "$RECYCLE.BIN",
         ".Spotlight-V100",
         ".TemporaryItems",
         ".Trashes",
