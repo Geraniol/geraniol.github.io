@@ -73,6 +73,7 @@
             background-color: #F3F4F7;
             padding: 20px;
             font-size: 20px;
+            font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
         }
 
         #img {
@@ -120,7 +121,7 @@
         }
 
         #result>canvas {
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0 0 12px #ffd231;
             margin: 10px;
         }
@@ -154,11 +155,21 @@
         {
             html2canvas( document.getElementById( "main" ),
                 {
-                    backgroundColor: "#F3F4F7",
-                    font: "20px Arial",
+                    backgroundColor: "#F3F4F7"
                 } ).then( canvas =>
                 {
                     document.getElementById( "result" ).appendChild( canvas );
+                    canvas.style.cursor = "pointer";
+                    canvas.onclick = () =>
+                    {
+                        canvas.toBlob( function ( blob )
+                        {
+                            const a = document.createElement( "a" );
+                            a.href = URL.createObjectURL( blob );
+                            a.download = "97.png";
+                            a.click();
+                        } );
+                    };
                 } );
         }
     </script>
